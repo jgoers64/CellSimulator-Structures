@@ -1,0 +1,46 @@
+{
+  "catalog_version": 1,
+  "catalog_name": "CellSimulator-Structures",
+  "entries": [
+    {
+      "id": "insulin",
+      "name": "Human insulin",
+      "pdb_id": "2HIU",
+      "category": "proteins",
+      "priority": 1,
+      "metadata": "structures/proteins/insulin/metadata.json"
+    },
+    {
+      "id": "ubiquitin",
+      "name": "Human ubiquitin",
+      "pdb_id": "1UBQ",
+      "category": "proteins",
+      "priority": 2,
+      "metadata": "structures/proteins/ubiquitin/metadata.json"
+    },
+    {
+      "id": "lysozyme",
+      "name": "Hen egg-white lysozyme",
+      "pdb_id": "1LYZ",
+      "category": "proteins",
+      "priority": 3,
+      "metadata": "structures/proteins/lysozyme/metadata.json"
+    },
+    {
+      "id": "myoglobin",
+      "name": "Sperm whale myoglobin",
+      "pdb_id": "1MBN",
+      "category": "proteins",
+      "priority": 4,
+      "metadata": "structures/proteins/myoglobin/metadata.json"
+    },
+    {
+      "id": "hemoglobin",
+      "name": "Human deoxyhemoglobin",
+      "pdb_id": "4HHB",
+      "category": "proteins",
+      "priority": 5,
+      "metadata": "structures/proteins/hemoglobin/metadata.json"
+    }
+  ]
+}
