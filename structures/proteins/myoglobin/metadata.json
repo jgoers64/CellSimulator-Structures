@@ -1,24 +1,26 @@
 {
   "schema_version": 1,
   "id": "myoglobin",
-  "name": "Sperm whale myoglobin",
+  "name": "Human myoglobin (mutant, 3RGK)",
   "aliases": [
+    "human myoglobin mutant",
+    "human myoglobin",
     "myoglobin"
   ],
   "category": "proteins",
   "biological_role": "Heme protein that binds oxygen in muscle.",
-  "organism": "Physeter macrocephalus",
+  "organism": "Homo sapiens",
   "source": {
     "database": "RCSB Protein Data Bank",
-    "pdb_id": "1MBN",
-    "entry_url": "https://www.rcsb.org/structure/1MBN",
-    "coordinate_url": "https://files.rcsb.org/download/1MBN.pdb",
-    "doi": "10.2210/pdb1MBN/pdb",
+    "pdb_id": "3RGK",
+    "entry_url": "https://www.rcsb.org/structure/3RGK",
+    "coordinate_url": "https://files.rcsb.org/download/3RGK.pdb",
+    "doi": "10.2210/pdb3RGK/pdb",
     "experimental_method": "X-ray diffraction",
-    "resolution_angstrom": 2
+    "resolution_angstrom": 1.65
   },
   "structure": {
-    "assembly_description": "One myoglobin chain with its heme cofactor.",
+    "assembly_description": "One human myoglobin chain containing experimental mutations and the heme group.",
     "coordinate_selection": "first_model_heavy_atoms",
     "include_hetero_residues": [
       "HEM"
@@ -31,5 +33,5 @@
     "simulation_ready": false,
     "display_bond_inference": "within residues, peptide C-N, nearby cysteine SG pairs; visual only"
   },
-  "notes": "Heme is retained for display; any other ligand and waters are not imported."
+  "notes": "The deposited human myoglobin has two annotated mutations (including K45R). It is NOT the unmodified human sequence; do not use as wild-type reference."
 }

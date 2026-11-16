@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "id": "lysozyme",
-  "name": "Hen egg-white lysozyme",
+  "name": "Human lysozyme",
   "aliases": [
-    "lysozyme",
-    "hen egg-white lysozyme"
+    "human lysozyme",
+    "lysozyme"
   ],
   "category": "proteins",
   "biological_role": "Enzyme that hydrolyzes bacterial cell-wall peptidoglycan.",
-  "organism": "Gallus gallus",
+  "organism": "Homo sapiens",
   "source": {
     "database": "RCSB Protein Data Bank",
-    "pdb_id": "1LYZ",
-    "entry_url": "https://www.rcsb.org/structure/1LYZ",
-    "coordinate_url": "https://files.rcsb.org/download/1LYZ.pdb",
-    "doi": "10.2210/pdb1LYZ/pdb",
+    "pdb_id": "1LZ1",
+    "entry_url": "https://www.rcsb.org/structure/1LZ1",
+    "coordinate_url": "https://files.rcsb.org/download/1LZ1.pdb",
+    "doi": "10.2210/pdb1LZ1/pdb",
     "experimental_method": "X-ray diffraction",
-    "resolution_angstrom": 2
+    "resolution_angstrom": 1.5
   },
   "structure": {
-    "assembly_description": "One lysozyme protein chain.",
+    "assembly_description": "One human lysozyme chain.",
     "coordinate_selection": "first_model_heavy_atoms",
     "include_hetero_residues": [],
     "include_waters": false,
@@ -30,5 +30,5 @@
     "simulation_ready": false,
     "display_bond_inference": "within residues, peptide C-N, nearby cysteine SG pairs; visual only"
   },
-  "notes": "This structure comes from chicken, not human lysozyme."
+  "notes": "Human wild-type lysozyme; the experimental structure is not prepared for molecular dynamics."
 }

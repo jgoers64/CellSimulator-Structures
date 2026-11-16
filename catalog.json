@@ -20,16 +20,16 @@
     },
     {
       "id": "lysozyme",
-      "name": "Hen egg-white lysozyme",
-      "pdb_id": "1LYZ",
+      "name": "Human lysozyme",
+      "pdb_id": "1LZ1",
       "category": "proteins",
       "priority": 3,
       "metadata": "structures/proteins/lysozyme/metadata.json"
     },
     {
       "id": "myoglobin",
-      "name": "Sperm whale myoglobin",
-      "pdb_id": "1MBN",
+      "name": "Human myoglobin (mutant, 3RGK)",
+      "pdb_id": "3RGK",
       "category": "proteins",
       "priority": 4,
       "metadata": "structures/proteins/myoglobin/metadata.json"

@@ -48,6 +48,12 @@ class CatalogTests(unittest.TestCase):
     def test_catalog(self):
         self.assertEqual(mod.validate(), 5)
         self.assertEqual(len(mod.select_entries("all")), 5)
+        self.assertEqual(
+            {e["pdb_id"] for e in mod.catalog()},
+            {"2HIU", "1UBQ", "1LZ1", "3RGK", "4HHB"},
+        )
+        self.assertTrue(all(mod.metadata(e)["organism"] == "Homo sapiens" for e in mod.catalog()))
+        self.assertIn("mutation", mod.metadata(mod.select_entries("myoglobin")[0])["notes"].lower())
         with self.assertRaises(ValueError):
             mod.select_entries("../../foo")
 
@@ -97,6 +103,54 @@ class CatalogTests(unittest.TestCase):
             self.assertTrue(payload["view_only"])
             self.assertEqual(len(payload["atoms"]), 23)
             self.assertEqual(payload["source"], "RCSB PDB 2HIU; DOI 10.2210/pdb2HIU/pdb")
+
+    def test_replacing_animal_sources_does_not_leave_old_render_files(self):
+        replacements = [
+            ("lysozyme", "lysozyme-1lyz.json", "1LYZ"),
+            ("myoglobin", "myoglobin-1mbn.json", "1MBN"),
+        ]
+        for ident, old_filename, old_id in replacements:
+            with self.subTest(ident=ident), tempfile.TemporaryDirectory() as d:
+                root = Path(d)
+                checkout = root / "CellSimulator"
+                (checkout / "sim").mkdir(parents=True)
+                (checkout / "main.py").write_text("# main", encoding="utf-8")
+                (checkout / "sim" / "loader.py").write_text("# loader", encoding="utf-8")
+                protein_dir = checkout / "molecules" / "proteins"
+                protein_dir.mkdir(parents=True)
+                old_path = protein_dir / old_filename
+                old_path.write_text(
+                    json.dumps({"view_only": True, "source": f"RCSB PDB {old_id}; generated previous catalog"}),
+                    encoding="utf-8",
+                )
+                record = mod.select_entries(ident)[0]
+                source_pdb = root / (record["pdb_id"].lower() + ".pdb")
+                replacement_raw = self.raw.replace(self.pdbid.encode(), record["pdb_id"].encode())
+                source_pdb.write_bytes(replacement_raw)
+                with mock.patch.object(mod, "fetch_pdb", return_value=source_pdb):
+                    new_path = mod.install(record, checkout)
+                self.assertTrue(new_path.is_file())
+                self.assertFalse(old_path.exists())
+                self.assertEqual(json.loads(new_path.read_text(encoding="utf-8"))["organism"],
+                                 "Homo sapiens")
+
+    def test_retirement_preserves_unrecognized_user_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            checkout = root / "CellSimulator"
+            (checkout / "sim").mkdir(parents=True)
+            (checkout / "main.py").write_text("# main", encoding="utf-8")
+            (checkout / "sim" / "loader.py").write_text("# loader", encoding="utf-8")
+            proteins = checkout / "molecules" / "proteins"
+            proteins.mkdir(parents=True)
+            user_file = proteins / "lysozyme-1lyz.json"
+            user_file.write_text(json.dumps({"source": "user modified data", "view_only": True}), encoding="utf-8")
+            record = mod.select_entries("lysozyme")[0]
+            source_pdb = root / "1lz1.pdb"
+            source_pdb.write_bytes(self.raw.replace(self.pdbid.encode(), b"1LZ1"))
+            with mock.patch.object(mod, "fetch_pdb", return_value=source_pdb):
+                mod.install(record, checkout)
+            self.assertTrue(user_file.exists())
 
 
 if __name__ == "__main__":
