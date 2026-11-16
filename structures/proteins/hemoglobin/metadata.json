@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "hemoglobin",
+  "name": "Human deoxyhemoglobin",
+  "aliases": [
+    "hemoglobin",
+    "human hemoglobin"
+  ],
+  "category": "proteins",
+  "biological_role": "Tetrameric red blood cell protein that transports oxygen.",
+  "organism": "Homo sapiens",
+  "source": {
+    "database": "RCSB Protein Data Bank",
+    "pdb_id": "4HHB",
+    "entry_url": "https://www.rcsb.org/structure/4HHB",
+    "coordinate_url": "https://files.rcsb.org/download/4HHB.pdb",
+    "doi": "10.2210/pdb4HHB/pdb",
+    "experimental_method": "X-ray diffraction",
+    "resolution_angstrom": 1.74
+  },
+  "structure": {
+    "assembly_description": "Two alpha and two beta globin chains with heme cofactors, deoxygenated state.",
+    "coordinate_selection": "first_model_heavy_atoms",
+    "include_hetero_residues": [
+      "HEM"
+    ],
+    "include_waters": false,
+    "include_hydrogens": false
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "display_bond_inference": "within residues, peptide C-N, nearby cysteine SG pairs; visual only"
+  },
+  "notes": "Deoxyhemoglobin is one structural state; oxygen-binding dynamics are not simulated."
+}
