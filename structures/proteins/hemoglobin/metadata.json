@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "hemoglobin",
-  "name": "Human deoxyhemoglobin",
+  "name": "Deoxyhemoglobin",
   "aliases": [
     "hemoglobin",
     "human hemoglobin"
