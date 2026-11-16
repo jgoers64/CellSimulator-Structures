@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "insulin",
+  "name": "Human insulin",
+  "aliases": [
+    "insulin",
+    "human insulin"
+  ],
+  "category": "proteins",
+  "biological_role": "Peptide hormone that signals cells to regulate glucose metabolism.",
+  "organism": "Homo sapiens",
+  "source": {
+    "database": "RCSB Protein Data Bank",
+    "pdb_id": "2HIU",
+    "entry_url": "https://www.rcsb.org/structure/2HIU",
+    "coordinate_url": "https://files.rcsb.org/download/2HIU.pdb",
+    "doi": "10.2210/pdb2HIU/pdb",
+    "experimental_method": "Solution NMR",
+    "resolution_angstrom": null
+  },
+  "structure": {
+    "assembly_description": "A and B chains of mature human insulin; first of 10 deposited NMR conformers.",
+    "coordinate_selection": "first_model_heavy_atoms",
+    "include_hetero_residues": [],
+    "include_waters": false,
+    "include_hydrogens": false
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "display_bond_inference": "within residues, peptide C-N, nearby cysteine SG pairs; visual only"
+  },
+  "notes": "The deposited insulin conformers were determined in zinc-free acidic solution; they are not a universal physiological structure."
+}
