@@ -49,6 +49,15 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(mod.validate(), 5)
         self.assertEqual(len(mod.select_entries("all")), 5)
         self.assertEqual(
+            {entry["name"] for entry in mod.catalog()},
+            {"Insulin", "Ubiquitin", "Lysozyme", "Myoglobin (mutant, 3RGK)", "Deoxyhemoglobin"},
+        )
+        self.assertTrue(
+            all(not entry["name"].startswith("Human ") for entry in mod.catalog())
+        )
+        self.assertTrue(all(mod.metadata(entry)["organism"] == "Homo sapiens" for entry in mod.catalog()))
+
+        self.assertEqual(
             {e["pdb_id"] for e in mod.catalog()},
             {"2HIU", "1UBQ", "1LZ1", "3RGK", "4HHB"},
         )

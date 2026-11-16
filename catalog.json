@@ -4,7 +4,7 @@
   "entries": [
     {
       "id": "insulin",
-      "name": "Human insulin",
+      "name": "Insulin",
       "pdb_id": "2HIU",
       "category": "proteins",
       "priority": 1,
@@ -12,7 +12,7 @@
     },
     {
       "id": "ubiquitin",
-      "name": "Human ubiquitin",
+      "name": "Ubiquitin",
       "pdb_id": "1UBQ",
       "category": "proteins",
       "priority": 2,
@@ -20,7 +20,7 @@
     },
     {
       "id": "lysozyme",
-      "name": "Human lysozyme",
+      "name": "Lysozyme",
       "pdb_id": "1LZ1",
       "category": "proteins",
       "priority": 3,
@@ -28,7 +28,7 @@
     },
     {
       "id": "myoglobin",
-      "name": "Human myoglobin (mutant, 3RGK)",
+      "name": "Myoglobin (mutant, 3RGK)",
       "pdb_id": "3RGK",
       "category": "proteins",
       "priority": 4,
@@ -36,7 +36,7 @@
     },
     {
       "id": "hemoglobin",
-      "name": "Human deoxyhemoglobin",
+      "name": "Deoxyhemoglobin",
       "pdb_id": "4HHB",
       "category": "proteins",
       "priority": 5,

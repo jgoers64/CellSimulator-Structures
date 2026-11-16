@@ -9,10 +9,10 @@ A standalone, version-controlled catalog of experimental macromolecular structur
 | Insulin | [2HIU](https://www.rcsb.org/structure/2HIU) | Human |
 | Ubiquitin | [1UBQ](https://www.rcsb.org/structure/1UBQ) | Human |
 | Lysozyme | [1LZ1](https://www.rcsb.org/structure/1LZ1) | Human |
-| Myoglobin (experimentally mutated) | [3RGK](https://www.rcsb.org/structure/3RGK) | Human |
+| Myoglobin (mutant) | [3RGK](https://www.rcsb.org/structure/3RGK) | Human |
 | Hemoglobin | [4HHB](https://www.rcsb.org/structure/4HHB) | Human |
 
-All five entries are sourced from *Homo sapiens*. The available human myoglobin X-ray structure (3RGK) contains experimentally documented mutations; it is not labeled as wild type. Each entry has its own metadata file with a pinned PDB identifier, source URL, experimental method, organism, and rendering notes. The catalog **does not invent atomic coordinates**.
+Displayed names are concise (Insulin, Ubiquitin, Lysozyme, Myoglobin (mutant), Deoxyhemoglobin). All five entries are sourced from *Homo sapiens*. The available human myoglobin X-ray structure (3RGK) contains experimentally documented mutations; it is not labeled as wild type. Each entry has its own metadata file with a pinned PDB identifier, source URL, experimental method, organism, and rendering notes. The catalog **does not invent atomic coordinates**.
 
 ## Use with CellSimulator
 
