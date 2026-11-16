@@ -51,6 +51,8 @@ def validate():
         m = metadata(entry)
         if m["id"] != entry["id"] or m["source"]["pdb_id"] != entry["pdb_id"]:
             raise ValueError(f"Inconsistent entry: {entry['id']}")
+        if m.get("organism") != "Homo sapiens":
+            raise ValueError(f"Starter proteins must be human: {entry['id']}")
         if not m["rendering"]["view_only"] or m["rendering"]["simulation_ready"]:
             raise ValueError(f"Unvalidated simulation model in {entry['id']}")
         if m["source"]["coordinate_url"] != f"https://files.rcsb.org/download/{entry['pdb_id']}.pdb":
@@ -205,6 +207,8 @@ def build_structure(m, pdb_path):
     return {
         "name": m["name"],
         "aliases": m["aliases"],
+        "organism": m["organism"],
+        "pdb_id": m["source"]["pdb_id"],
         "coordinate_type": "experimental_pdb",
         "source": f"RCSB PDB {m['source']['pdb_id']}; DOI {m['source']['doi']}",
         "source_url": m["source"]["entry_url"],
@@ -234,6 +238,22 @@ def install(entry, target):
     temp = dest.with_suffix(".json.tmp")
     temp.write_text(contents, encoding="utf-8")
     temp.replace(dest)
+    # Retire ONLY the previously generated, source-identifiable animal structure.
+    # Never delete an unrelated file or a file modified into a different record.
+    retired = {"lysozyme": ("lysozyme-1lyz.json", "1LYZ"),
+               "myoglobin": ("myoglobin-1mbn.json", "1MBN")}.get(entry["id"])
+    if retired:
+        legacy_name, legacy_id = retired
+        legacy_path = folder / legacy_name
+        if legacy_path.is_file():
+            try:
+                legacy_data = json.loads(legacy_path.read_text(encoding="utf-8"))
+            except (OSError, ValueError, UnicodeError):
+                legacy_data = {}
+            if (isinstance(legacy_data, dict)
+                    and legacy_data.get("view_only") is True
+                    and "RCSB PDB " + legacy_id in str(legacy_data.get("source", ""))):
+                legacy_path.unlink()
     print("Installed {} ({}) - {} heavy atoms, {} display bonds: {}".format(
         entry["name"], entry["pdb_id"], len(payload["atoms"]), len(payload["bonds"]), dest))
     return dest
