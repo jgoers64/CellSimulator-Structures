@@ -1,0 +1,19 @@
+name: Validate structure catalog
+
+on:
+  push:
+    branches: [main, human-starter-proteins]
+  pull_request:
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate source metadata
+        run: python catalog.py validate
+      - name: Run tests without network access
+        run: python -m unittest discover -s tests -v
