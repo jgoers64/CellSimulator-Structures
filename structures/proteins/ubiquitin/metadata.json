@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "ubiquitin",
+  "name": "Human ubiquitin",
+  "aliases": [
+    "ubiquitin"
+  ],
+  "category": "proteins",
+  "biological_role": "Protein modifier used in ubiquitin-dependent cellular signaling and protein turnover.",
+  "organism": "Homo sapiens",
+  "source": {
+    "database": "RCSB Protein Data Bank",
+    "pdb_id": "1UBQ",
+    "entry_url": "https://www.rcsb.org/structure/1UBQ",
+    "coordinate_url": "https://files.rcsb.org/download/1UBQ.pdb",
+    "doi": "10.2210/pdb1UBQ/pdb",
+    "experimental_method": "X-ray diffraction",
+    "resolution_angstrom": 1.8
+  },
+  "structure": {
+    "assembly_description": "One ubiquitin protein chain.",
+    "coordinate_selection": "first_model_heavy_atoms",
+    "include_hetero_residues": [],
+    "include_waters": false,
+    "include_hydrogens": false
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "display_bond_inference": "within residues, peptide C-N, nearby cysteine SG pairs; visual only"
+  },
+  "notes": "A structure of free ubiquitin, not a ubiquitin conjugate."
+}
