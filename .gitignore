@@ -1,0 +1,7 @@
+# Downloaded source structures, generated render files, and simulation output
+cache/
+output/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tmp
