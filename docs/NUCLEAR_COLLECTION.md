@@ -45,10 +45,18 @@ python nucleus.py assets
 
 These commands inspect the catalog. They do not populate a nucleus with every listed molecule or determine a cell-specific abundance distribution.
 
-The inventory is the identity/evidence layer; current coordinate availability is
+The inventory is the gene/molecule evidence layer; current coordinate availability is
 joined from the asset manifests. A linked macromolecular assembly can represent
 only a fragment or a component of a protein entry. It is not automatically a
 full-length, isolated model of that protein.
+
+Protein identity belongs to the existing Human Proteome catalog. Nuclear gene
+rows sharing an exact verified UniProt accession share one simulator reference.
+Use `python nucleus.py reconcile --target ..` and
+`python nucleus.py plan all --target ..` from a nested checkout before adding
+assets. Read [molecule identity and reuse](MOLECULE_IDENTITY.md) for the decision
+rules and current limits. A missing local proteome database is reported as
+unavailable, not interpreted as proof that the user's proteins need recreating.
 
 ## Predicted protein models
 

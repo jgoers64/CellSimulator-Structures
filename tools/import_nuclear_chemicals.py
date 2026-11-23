@@ -283,6 +283,8 @@ def build_asset(raw, spec, raw_path, source_date):
                 "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
                 "copies_per_default_g1_nucleus": None, "abundance_rank_default_g1": None}
     coordinate = {"schema_version": 1, "id": asset_id, "name": title, "aliases": [inventory_name],
+                  "pdb_ccd_id": ccd_id,
+                  "chemical_identity": {"ccd_id": ccd_id, **metadata["chemical_identity"]},
                   "coordinate_type": "idealized_chemical_component", "coordinate_units": "angstrom", "units": "angstrom",
                   "view_only": True, "simulation_ready": False, "source": f"wwPDB CCD {ccd_id}, computed ideal coordinates",
                   "source_url": source["entry_url"], "source_sha256": source["sha256"], "formal_charge": expected_charge,

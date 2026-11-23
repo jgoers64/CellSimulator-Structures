@@ -182,6 +182,7 @@ def selected_atoms(residue):
 
 def convert_mmcif(metadata, path, *, max_atoms=DEFAULT_MAX_ATOMS):
     """Return source atoms and disclosed display connectivity, without MD preparation."""
+    from structure_library.identity import asset_component_refs
     if max_atoms < 1:
         raise ValueError("max_atoms must be positive")
     gemmi = require_gemmi()
@@ -279,6 +280,7 @@ def convert_mmcif(metadata, path, *, max_atoms=DEFAULT_MAX_ATOMS):
         "total_charge": 0.0,
         "charge_note": "Loader placeholder only; total molecular charge and partial charges are not calculated.",
         "structure_provenance": metadata,
+        "component_refs": asset_component_refs(metadata),
         "processing": {
             "importer": IMPORTER_VERSION, "gemmi_version": gemmi.__version__,
             "model_selection": "first deposited model", "assembly_id": assembly_id,

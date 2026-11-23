@@ -6,12 +6,16 @@ reviewed structures and is not a recipe for the population of one G1 nucleus.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 import sys
 from pathlib import Path
 
 from structure_library.coordinates import (DEFAULT_MAX_ATOMS, convert_mmcif,
     digest, fetch_source, read_json, safe_path, write_json)
+from structure_library.identity import (asset_component_refs, collection_protein_links,
+    reconcile_inventory)
+from structure_library.installation import TargetIndex, install_payload, plan_payload
 
 ROOT = Path(__file__).resolve().parent
 COLLECTION = ROOT / "collections" / "human-nucleus"
@@ -81,7 +85,11 @@ def read_chemical(asset, root=ROOT):
     data = json.loads(raw)
     if data.get("id") != asset["id"] or data.get("simulation_ready") is not False:
         raise ValueError("Unexpected chemical identity or simulation claim")
-    return data
+    # Preserve the pinned source bytes; enrich the exported/installed view with
+    # the identity already recorded in the CCD metadata, never a name-based guess.
+    return dict(data, pdb_ccd_id=meta["source"]["ccd_id"],
+                chemical_identity={"ccd_id": meta["source"]["ccd_id"],
+                                   **meta["chemical_identity"]})
 
 
 def get_asset(query, root=ROOT):
@@ -111,22 +119,22 @@ def payload_for_asset(asset, root=ROOT, *, max_atoms=DEFAULT_MAX_ATOMS):
     return convert_mmcif(metadata, path, max_atoms=max_atoms)
 
 
-def install_payload(payload, target):
-    target = Path(target).expanduser().resolve()
-    if not (target / "main.py").is_file() or not (target / "sim" / "loader.py").is_file():
-        raise ValueError("--target must be an existing CellSimulator checkout")
-    ident = payload.get("asset_id") or payload.get("id")
-    if not ident or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-_" for c in ident):
-        raise ValueError("Unsafe asset identifier")
-    dest = target / "molecules" / "nucleus" / f"{ident}.json"
-    if dest.exists():
-        old = read_json(dest)
-        if (old.get("structure_library_installer") != "nuclear-library-v1"
-                or (old.get("asset_id") or old.get("id")) != ident):
-            raise ValueError(f"Refusing to overwrite an unrelated or unrecognized file: {dest}")
-    payload = dict(payload, structure_library_installer="nuclear-library-v1")
-    write_json(dest, payload, compact=True)
-    return dest
+def plan_asset(asset, target, root=ROOT, *, index=None, max_atoms=DEFAULT_MAX_ATOMS):
+    """Make the installation decision using local metadata before downloading."""
+    if asset.get("source_kind") == "wwpdb_ccd":
+        payload = read_chemical(asset, root)
+    else:
+        metadata = read_json(safe_path(root, asset["metadata_path"]))
+        payload = {"asset_id": asset["id"], "name": asset["name"],
+                   "source_sha256": metadata["source"]["coordinate_sha256"],
+                   "structure_provenance": metadata,
+                   "component_refs": asset_component_refs(metadata)}
+    plan = plan_payload(payload, target, index=index)
+    upper_bound = asset.get("atom_count_upper_bound", 0)
+    if plan["action"] == "install_new_asset" and upper_bound > max_atoms:
+        plan.update(action="needs_chunking", reason=(
+            f"Selected assembly upper bound {upper_bound:,} exceeds the {max_atoms:,}-atom budget; no source is downloaded"))
+    return plan
 
 
 def main(argv=None):
@@ -139,6 +147,14 @@ def main(argv=None):
     listing.add_argument("--all", action="store_true", help="Print every matching identity")
     listing.add_argument("--json", action="store_true")
     sub.add_parser("assets", help="List bundled chemical geometry and pinned macromolecular sources")
+    reconcile = sub.add_parser("reconcile", help="Join nuclear gene evidence to the target Human Proteome; read-only, offline")
+    reconcile.add_argument("--target", type=Path, required=True)
+    reconcile.add_argument("--json", action="store_true", help="Include all canonical references and unresolved mappings")
+    plan = sub.add_parser("plan", help="Check reuse and possible duplicates before downloading or installing; offline")
+    plan.add_argument("which", help="Asset ID or 'all'")
+    plan.add_argument("--target", type=Path, required=True)
+    plan.add_argument("--max-atoms", type=int, default=DEFAULT_MAX_ATOMS)
+    plan.add_argument("--json", action="store_true")
     resolve = sub.add_parser("resolve", help="Show exact source candidates; optional explicit AlphaFold resolution")
     resolve.add_argument("which")
     resolve.add_argument("--predicted", action="store_true", help="Resolve and cache a labeled AlphaFold model")
@@ -163,6 +179,8 @@ def main(argv=None):
             macro = [asset for asset in available if asset.get("kind") == "macromolecule"]
             print(json.dumps({
                 "inventory_counts": data["counts"],
+                "unique_verified_protein_references": len(collection_protein_links(data["entries"])),
+                "protein_identity_policy": "Reuse human-proteome/<UniProt accession>; source gene rows are evidence, not additional protein definitions",
                 "bundled_chemical_coordinate_assets": len(chemical),
                 "pinned_macromolecular_sources": len(macro),
                 "explicitly_selected_predictions_in_local_cache": sum(asset.get("kind") == "prediction" for asset in available),
@@ -178,6 +196,7 @@ def main(argv=None):
             shown = entries if args.all else entries[:max(1, args.limit)]
             rows = [{"id": entry["id"], "name": entry["name"], "kind": entry["kind"],
                      "gene_symbol": entry.get("gene_symbol"),
+                     "canonical_protein_refs": [link["canonical_ref"] for link in collection_protein_links([entry])],
                      "representative_or_component_assets": linked_assets(entry, available),
                      "default_g1_copies": None} for entry in shown]
             if args.json:
@@ -190,6 +209,26 @@ def main(argv=None):
         elif args.command == "assets":
             for asset in available:
                 print(f"{asset['id']} | {asset['name']} | {asset['provenance_class']}")
+        elif args.command == "reconcile":
+            report = reconcile_inventory(inventory()["entries"], args.target)
+            if not args.json:
+                report = {key: value for key, value in report.items()
+                          if key not in {"protein_links", "unresolved_mappings"}}
+            print(json.dumps(report, indent=2))
+            if report["proteome_database"]["status"] == "unreadable":
+                return 1
+        elif args.command == "plan":
+            index = TargetIndex(args.target)
+            selected = available if args.which == "all" else [get_asset(args.which)]
+            plans = [plan_asset(asset, args.target, index=index, max_atoms=args.max_atoms)
+                     for asset in selected]
+            if args.json:
+                print(json.dumps({"actions": dict(Counter(p["action"] for p in plans)),
+                                  "assets": plans, "network_requests": 0, "files_written": 0}, indent=2))
+            else:
+                for result in plans:
+                    print(f"{result['asset_id']} | {result['action']} | {result['reason']}")
+                print("Read-only plan. No downloads, installed files, protein records or scene populations changed.")
         elif args.command == "resolve":
             entry = find_entry(args.which)
             if args.predicted:
@@ -218,10 +257,18 @@ def main(argv=None):
         elif args.command == "install":
             selected = available if args.which == "all" else [get_asset(args.which)]
             failed = []
+            index = TargetIndex(args.target)
             for asset in selected:
                 try:
+                    decision = plan_asset(asset, args.target, index=index, max_atoms=args.max_atoms)
+                    if decision["action"].startswith("reuse_"):
+                        destination = decision.get("canonical_ref") or decision["matches"][0]["path"]
+                        print(f"Reused {asset['id']}: {destination}. {decision['reason']}", flush=True)
+                        continue
+                    if decision["action"] != "install_new_asset":
+                        raise ValueError(f"{decision['action']}: {decision['reason']}")
                     payload = payload_for_asset(asset, max_atoms=args.max_atoms)
-                    print(f"Installed {asset['id']}: {install_payload(payload, args.target)}", flush=True)
+                    print(f"Available {asset['id']}: {install_payload(payload, args.target, index=index)}", flush=True)
                 except (OSError, ValueError, RuntimeError) as exc:
                     failed.append(asset["id"])
                     print(f"NOT INSTALLED {asset['id']}: {exc}", file=sys.stderr, flush=True)

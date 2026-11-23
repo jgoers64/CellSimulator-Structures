@@ -14,6 +14,21 @@ The repository also contains a source-aware nuclear library:
 
 An inventory record is not a complete 3D structure. Cross-references still need appropriate sequence, assembly, state, and local-quality review. Unknown RNA sequences and lipid species receive no invented geometry. Read [the nuclear collection guide](docs/NUCLEAR_COLLECTION.md) and [the structure reliability policy](docs/STRUCTURE_RELIABILITY.md).
 
+**Human Proteome identities are reused.** The nuclear gene records add evidence;
+they are not another set of protein definitions. See [molecule identity and reuse](docs/MOLECULE_IDENTITY.md).
+
+Before installing into an existing checkout, inspect its actual downloaded catalog:
+
+```powershell
+python nucleus.py reconcile --target ../CellSimulator
+python nucleus.py plan all --target ../CellSimulator
+```
+
+Use `--target ..` for a Structures repository nested inside the simulator.
+These commands make no downloads or changes. The installer reuses verified
+existing representations, preserves the built-in nucleosome, and reports
+ambiguous overlaps instead of creating another entry automatically.
+
 ```powershell
 python nucleus.py summary
 python nucleus.py list --query PCNA
@@ -28,7 +43,7 @@ Install the PCNA example into a neighboring application checkout:
 python nucleus.py install pdb-1vym --target ../CellSimulator
 ```
 
-Use `--target ..` when this repository is nested inside `CellSimulator`. Installation writes view-only files under `molecules/nucleus/`; it does not populate or change the nucleus scene. Macro sources download only when explicitly fetched or installed; searching the inventory never downloads thousands of atomic models. The original five-protein workflow below remains unchanged.
+Use `--target ..` when this repository is nested inside `CellSimulator`. New selected assets receive view-only files under `molecules/nucleus/`; verified existing items are reused. Installation does not populate or change the nucleus scene. Macro sources download only when explicitly fetched or installed; searching the inventory never downloads thousands of atomic models. The original five-protein workflow below remains unchanged.
 
 ## Five starter proteins
 
