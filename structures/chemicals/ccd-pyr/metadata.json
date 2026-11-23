@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-pyr",
+  "name": "Pyruvic acid, neutral representative of pyruvate family",
+  "inventory_name": "Pyruvate",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "PYR",
+    "url": "https://files.rcsb.org/ligands/download/PYR.cif",
+    "entry_url": "https://www.rcsb.org/ligand/PYR",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-pyr/source.cif",
+    "sha256": "cb79f4b4d65c6aab3d17e69acdf77bf46b79b2a9dd1457eea7ebc763f5ce88ad",
+    "retrieved_at_utc": "2026-11-23T03:57:37.874415+00:00",
+    "ccd_modified_date": "2025-06-27",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "PYRUVIC ACID",
+    "formula": "C3 H4 O3",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "PYR",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "12.01",
+        "descriptor": "O=C(C(=O)O)C"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C3H4O3/c1-2(4)3(5)6/h1H3,(H,5,6)"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "LCTONWCANYUPML-UHFFFAOYSA-N"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "CC(=O)C(O)=O"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "CC(=O)C(O)=O"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "CC(=O)C(=O)O"
+      },
+      {
+        "comp_id": "PYR",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "CC(=O)C(=O)O"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 10,
+  "bond_count": 9,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

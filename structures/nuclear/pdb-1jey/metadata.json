@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "id": "pdb-1jey",
+  "name": "Human Ku70–Ku80 heterodimer bound to DNA",
+  "provenance_class": "experimental_coordinate_model",
+  "coordinate_status": "pinned_source_available",
+  "source": {
+    "database": "wwPDB / RCSB PDB",
+    "pdb_id": "1JEY",
+    "entry_url": "https://www.rcsb.org/structure/1JEY",
+    "coordinate_url": "https://files.rcsb.org/download/1JEY.cif.gz",
+    "coordinate_format": "PDBx/mmCIF",
+    "coordinate_sha256": "ac17a58b26e516f6a38bcc3ac7c176465cfffc434fb5bcd5ee81ee7d52ce4643",
+    "checksum_scope": "uncompressed original mmCIF bytes",
+    "coordinate_bytes": 1049279,
+    "coordinate_units": "angstrom",
+    "retrieved_at_utc": "2026-11-23T03:59:40+00:00",
+    "entry_version": {
+      "deposit_date": "2001-06-19T00:00:00.000+00:00",
+      "has_released_experimental_data": "N",
+      "initial_release_date": "2001-08-10T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 4,
+      "revision_date": "2023-08-16T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "primary_citation": {
+      "country": "UK",
+      "id": "primary",
+      "journal_abbrev": "Nature",
+      "journal_id_ASTM": "NATUAS",
+      "journal_id_CSD": "0006",
+      "journal_id_ISSN": "0028-0836",
+      "journal_volume": "412",
+      "page_first": "607",
+      "page_last": "614",
+      "pdbx_database_id_DOI": "10.1038/35088000",
+      "pdbx_database_id_PubMed": 11493912,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Walker, J.R.",
+        "Corpina, R.A.",
+        "Goldberg, J."
+      ],
+      "rcsb_journal_abbrev": "Nature",
+      "title": "Structure of the Ku heterodimer bound to DNA and its implications for double-strand break repair.",
+      "year": 2001
+    },
+    "metadata_url": "https://data.rcsb.org/rest/v1/core/entry/1JEY",
+    "metadata_sha256": "9c9c8afd09f9669e3edd12be8307b132650529160e82dd5fef523f1332c3ec81"
+  },
+  "assembly": {
+    "id": "1",
+    "description": "Ku70–Ku80 heterodimer with a DNA-end substrate.",
+    "author_determined": true,
+    "software_determined": false,
+    "oligomeric_details": "tetrameric",
+    "atom_count_upper_bound": 9472,
+    "coordinate_scope": "Original asymmetric unit plus explicitly selected archive assembly operators"
+  },
+  "entities": {
+    "descriptions": [
+      {
+        "id": "1",
+        "type": "polymer",
+        "src_method": "syn",
+        "pdbx_description": "DNA (5'-D(*GP*TP*TP*TP*TP*TP*AP*GP*TP*TP*TP*AP*TP*TP*GP*GP*GP*CP*GP*CP*G)-3')",
+        "formula_weight": "6506.188",
+        "pdbx_number_of_molecules": "1",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      },
+      {
+        "id": "2",
+        "type": "polymer",
+        "src_method": "syn",
+        "pdbx_description": "DNA (34-MER)",
+        "formula_weight": "10325.685",
+        "pdbx_number_of_molecules": "1",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      },
+      {
+        "id": "3",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Ku70",
+        "formula_weight": "69945.039",
+        "pdbx_number_of_molecules": "1",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      },
+      {
+        "id": "4",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Ku80",
+        "formula_weight": "64190.543",
+        "pdbx_number_of_molecules": "1",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": "residues 1-565",
+        "details": null
+      },
+      {
+        "id": "5",
+        "type": "water",
+        "src_method": "nat",
+        "pdbx_description": "water",
+        "formula_weight": "18.015",
+        "pdbx_number_of_molecules": "255",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      }
+    ],
+    "polymers": [
+      {
+        "entity_id": "1",
+        "type": "polydeoxyribonucleotide",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "(DG)(DT)(DT)(DT)(DT)(DT)(DA)(DG)(DT)(DT)(DT)(DA)(DT)(DT)(DG)(DG)(DG)(DC)(DG)(DC)\n(DG)",
+        "pdbx_seq_one_letter_code_can": "GTTTTTAGTTTATTGGGCGCG",
+        "pdbx_strand_id": "C",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "2",
+        "type": "polydeoxyribonucleotide",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "(DC)(DG)(DC)(DG)(DC)(DC)(DC)(DA)(DG)(DC)(DT)(DT)(DT)(DC)(DC)(DC)(DA)(DG)(DC)(DT)\n(DA)(DA)(DT)(DA)(DA)(DA)(DC)(DT)(DA)(DA)(DA)(DA)(DA)(DC)",
+        "pdbx_seq_one_letter_code_can": "CGCGCCCAGCTTTCCCAGCTAATAAACTAAAAAC",
+        "pdbx_strand_id": "D",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "3",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "MSGWESYYKTEGDEEAEEEQEENLEASGDYKYSGRDSLIFLVDASKAMFESQSEDELTPFDMSIQCIQSVYISKIISSDR\nDLLAVVFYGTEKDKNSVNFKNIYVLQELDNPGAKRILELDQFKGQQGQKRFQDMMGHGSDYSLSEVLWVCANLFSDVQFK\nMSHKRIMLFTNEDNPHGNDSAKASRARTKAGDLRDTGIFLDLMHLKKPGGFDISLFYRDIISIAEDEDLRVHFEESSKLE\nDLLRKVRAKETRKRALSRLKLKLNKDIVISVGIYNLVQKALKPPPIKLYRETNEPVKTKTRTFNTSTGGLLLPSDTKRSQ\nIYGSRQIILEKEETEELKRFDDPGLMLMGFKPLVLLKKHHYLRPSLFVYPEESLVIGSSTLFSALLIKCLEKEVAALCRY\nTPRRNIPPYFVALVPQEEELDDQKIQVTPPGFQLVFLPFADDKRKMPFTEKIMATPEQVGKMKAIVEKLRFTYRSDSFEN\nPVLQQHFRNLEALALDLMEPEQAVDLTLPKVEAMNKRLGSLVDEFKELVYPPDYNPEGKVTKRKHDNEGSGSKRPKVEYS\nEEELKTHISKGTLGKFTVPMLKEACRAYGLKSGLKKQELLEALTKHFQD",
+        "pdbx_seq_one_letter_code_can": "MSGWESYYKTEGDEEAEEEQEENLEASGDYKYSGRDSLIFLVDASKAMFESQSEDELTPFDMSIQCIQSVYISKIISSDR\nDLLAVVFYGTEKDKNSVNFKNIYVLQELDNPGAKRILELDQFKGQQGQKRFQDMMGHGSDYSLSEVLWVCANLFSDVQFK\nMSHKRIMLFTNEDNPHGNDSAKASRARTKAGDLRDTGIFLDLMHLKKPGGFDISLFYRDIISIAEDEDLRVHFEESSKLE\nDLLRKVRAKETRKRALSRLKLKLNKDIVISVGIYNLVQKALKPPPIKLYRETNEPVKTKTRTFNTSTGGLLLPSDTKRSQ\nIYGSRQIILEKEETEELKRFDDPGLMLMGFKPLVLLKKHHYLRPSLFVYPEESLVIGSSTLFSALLIKCLEKEVAALCRY\nTPRRNIPPYFVALVPQEEELDDQKIQVTPPGFQLVFLPFADDKRKMPFTEKIMATPEQVGKMKAIVEKLRFTYRSDSFEN\nPVLQQHFRNLEALALDLMEPEQAVDLTLPKVEAMNKRLGSLVDEFKELVYPPDYNPEGKVTKRKHDNEGSGSKRPKVEYS\nEEELKTHISKGTLGKFTVPMLKEACRAYGLKSGLKKQELLEALTKHFQD",
+        "pdbx_strand_id": "A",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "4",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "MVRSGNKAAVVLCMDVGFTMSNSIPGIESPFEQAKKVITMFVQRQVFAENKDEIALVLFGTDGTDNPLSGGDQYQNITVH\nRHLMLPDFDLLEDIESKIQPGSQQADFLDALIVSMDVIQHETIGKKFEKRHIEIFTDLSSRFSKSQLDIIIHSLKKCDIS\nLQFFLPFSLGKEDGSGDRGDGPFRLGGHGPSFPLKGITEQQKEGLEIVKMVMISLEGEDGLDEIYSFSESLRKLCVFKKI\nERHSIHWPCRLTIGSNLSIRIAAYKSILQERVKKTWTVVDAKTLKKEDIQKETVYCLNDDDETEVLKEDIIQGFRYGSDI\nVPFSKVDEEQMKYKSEGKCFSVLGFCKSSQVQRRFFMGNQVLKVFAARDDEAAAVALSSLIHALDDLDMVAIVRYAYDKR\nANPQVGVAFPHIKHNYECLVYVQLPFMEDLRQYMFSSLKNSKKYAPTEAQLNAVDALIDSMSLAKKDEKTDTLEDLFPTT\nKIPNPRFQRLFQCLLHRALHPREPLPPIQQHIWNMLNPPAEVTTKSQIPLSKIKTLFPLIEAKKKDQVTAQEIFQDNHED\nGPTAK",
+        "pdbx_seq_one_letter_code_can": "MVRSGNKAAVVLCMDVGFTMSNSIPGIESPFEQAKKVITMFVQRQVFAENKDEIALVLFGTDGTDNPLSGGDQYQNITVH\nRHLMLPDFDLLEDIESKIQPGSQQADFLDALIVSMDVIQHETIGKKFEKRHIEIFTDLSSRFSKSQLDIIIHSLKKCDIS\nLQFFLPFSLGKEDGSGDRGDGPFRLGGHGPSFPLKGITEQQKEGLEIVKMVMISLEGEDGLDEIYSFSESLRKLCVFKKI\nERHSIHWPCRLTIGSNLSIRIAAYKSILQERVKKTWTVVDAKTLKKEDIQKETVYCLNDDDETEVLKEDIIQGFRYGSDI\nVPFSKVDEEQMKYKSEGKCFSVLGFCKSSQVQRRFFMGNQVLKVFAARDDEAAAVALSSLIHALDDLDMVAIVRYAYDKR\nANPQVGVAFPHIKHNYECLVYVQLPFMEDLRQYMFSSLKNSKKYAPTEAQLNAVDALIDSMSLAKKDEKTDTLEDLFPTT\nKIPNPRFQRLFQCLLHRALHPREPLPPIQQHIWNMLNPPAEVTTKSQIPLSKIKTLFPLIEAKKKDQVTAQEIFQDNHED\nGPTAK",
+        "pdbx_strand_id": "B",
+        "pdbx_target_identifier": null
+      }
+    ],
+    "genetically_engineered_source": [
+      {
+        "entity_id": "3",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": null,
+        "pdbx_beg_seq_num": null,
+        "pdbx_end_seq_num": null,
+        "gene_src_common_name": "human",
+        "gene_src_genus": "Homo",
+        "pdbx_gene_src_gene": "G22P1",
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": "fall armyworm",
+        "pdbx_host_org_scientific_name": "Spodoptera frugiperda",
+        "pdbx_host_org_ncbi_taxonomy_id": "7108",
+        "host_org_genus": "Spodoptera",
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": "Sf9",
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": "Baculovirus",
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": "pFASTBAC HT",
+        "plasmid_details": null,
+        "pdbx_description": null
+      },
+      {
+        "entity_id": "4",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": null,
+        "pdbx_beg_seq_num": null,
+        "pdbx_end_seq_num": null,
+        "gene_src_common_name": "human",
+        "gene_src_genus": "Homo",
+        "pdbx_gene_src_gene": "XRCC5",
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": "fall armyworm",
+        "pdbx_host_org_scientific_name": "Spodoptera frugiperda",
+        "pdbx_host_org_ncbi_taxonomy_id": "7108",
+        "host_org_genus": "Spodoptera",
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": "Sf9",
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": "Baculovirus",
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": "pFASTBAC HT",
+        "plasmid_details": null,
+        "pdbx_description": null
+      }
+    ],
+    "natural_source": [],
+    "synthetic_source": [],
+    "sequence_references": [
+      {
+        "id": "1",
+        "db_name": "UNP",
+        "db_code": "KU70_HUMAN",
+        "entity_id": "3",
+        "pdbx_seq_one_letter_code": "MSGWESYYKTEGDEEAEEEQEENLEASGDYKYSGRDSLIFLVDASKAMFESQSEDELTPFDMSIQCIQSVYISKIISSDR\nDLLAVVFYGTEKDKNSVNFKNIYVLQELDNPGAKRILELDQFKGQQGQKRFQDMMGHGSDYSLSEVLWVCANLFSDVQFK\nMSHKRIMLFTNEDNPHGNDSAKASRARTKAGDLRDTGIFLDLMHLKKPGGFDISLFYRDIISIAEDEDLRVHFEESSKLE\nDLLRKVRAKETRKRALSRLKLKLNKDIVISVGIYNLVQKALKPPPIKLYRETNEPVKTKTRTFNTSTGGLLLPSDTKRSQ\nIYGSRQIILEKEETEELKRFDDPGLMLMGFKPLVLLKKHHYLRPSLFVYPEESLVIGSSTLFSALLIKCLEKEVAALCRY\nTPRRNIPPYFVALVPQEEELDDQKIQVTPPGFQLVFLPFADDKRKMPFTEKIMATPEQVGKMKAIVEKLRFTYRSDSFEN\nPVLQQHFRNLEALALDLMEPEQAVDLTLPKVEAMNKRLGSLVDEFKELVYPPDYNPEGKVTKRKHDNEGSGSKRPKVEYS\nEEELKTHISKGTLGKFTVPMLKEACRAYGLKSGLKKQELLEALTKHFQD",
+        "pdbx_align_begin": "0",
+        "pdbx_db_accession": "P12956",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "2",
+        "db_name": "UNP",
+        "db_code": "KU86_HUMAN",
+        "entity_id": "4",
+        "pdbx_seq_one_letter_code": "MVRSGNKAAVVLCMDVGFTMSNSIPGIESPFEQAKKVITMFVQRQVFAENKDEIALVLFGTDGTDNPLSGGDQYQNITVH\nRHLMLPDFDLLEDIESKIQPGSQQADFLDALIVSMDVIQHETIGKKFEKRHIEIFTDLSSRFSKSQLDIIIHSLKKCDIS\nLQFFLPFSLGKEDGSGDRGDGPFRLGGHGPSFPLKGITEQQKEGLEIVKMVMISLEGEDGLDEIYSFSESLRKLCVFKKI\nERHSIHWPCRLTIGSNLSIRIAAYKSILQERVKKTWTVVDAKTLKKEDIQKETVYCLNDDDETEVLKEDIIQGFRYGSDI\nVPFSKVDEEQMKYKSEGKCFSVLGFCKSSQVQRRFFMGNQVLKVFAARDDEAAAVALSSLIHALDDLDMVAIVRYAYDKR\nANPQVGVAFPHIKHNYECLVYVQLPFMEDLRQYMFSSLKNSKKYAPTEAQLNAVDALIDSMSLAKKDEKTDTLEDLFPTT\nKIPNPRFQRLFQCLLHRALHPREPLPPIQQHIWNMLNPPAEVTTKSQIPLSKIKTLFPLIEAKKKDQVTAQEIFQDNHED\nGPTAK",
+        "pdbx_align_begin": "0",
+        "pdbx_db_accession": "P13010",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "3",
+        "db_name": "PDB",
+        "db_code": "1JEY",
+        "entity_id": "1",
+        "pdbx_seq_one_letter_code": null,
+        "pdbx_align_begin": null,
+        "pdbx_db_accession": "1JEY",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "4",
+        "db_name": "PDB",
+        "db_code": "1JEY",
+        "entity_id": "2",
+        "pdbx_seq_one_letter_code": null,
+        "pdbx_align_begin": null,
+        "pdbx_db_accession": "1JEY",
+        "pdbx_db_isoform": null
+      }
+    ]
+  },
+  "coverage": {
+    "deposited_atom_count": 9472,
+    "modeled_polymer_residues": 1072,
+    "deposited_polymer_residues": 1229,
+    "unmodeled_polymer_residues": 157,
+    "deposited_hydrogen_count": 0,
+    "unobserved_residue_record_count": 157,
+    "unobserved_atom_record_count": 3,
+    "full_records_path": "structures/nuclear/pdb-1jey/coverage.json.gz",
+    "full_records_sha256": "091a1297242646e4a81f299b767aa759d4d84b61e67065d389e6aba02c81f513",
+    "note": "Counts describe deposited constructs; they do not establish full canonical-sequence coverage or nuclear abundance."
+  },
+  "quality": {
+    "methods": [
+      {
+        "crystals_number": 1,
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "resolution_angstrom": [
+      2.5
+    ],
+    "refinement": [
+      {
+        "B_iso_mean": 40.1,
+        "aniso_B_1_1": 5.62,
+        "aniso_B_1_2": 0.0,
+        "aniso_B_1_3": 0.0,
+        "aniso_B_2_2": -3.7,
+        "aniso_B_2_3": 0.0,
+        "aniso_B_3_3": -1.92,
+        "ls_R_factor_R_free": 0.28,
+        "ls_R_factor_R_free_error": 0.006,
+        "ls_R_factor_R_work": 0.218,
+        "ls_R_factor_all": 0.22,
+        "ls_R_factor_obs": 0.22,
+        "ls_d_res_high": 2.5,
+        "ls_d_res_low": 24.74,
+        "ls_number_reflns_R_free": 2304,
+        "ls_number_reflns_all": 46176,
+        "ls_number_reflns_obs": 46176,
+        "ls_percent_reflns_R_free": 5.0,
+        "ls_percent_reflns_obs": 97.8,
+        "pdbx_R_Free_selection_details": "RANDOM",
+        "pdbx_data_cutoff_high_absF": 2533650.68,
+        "pdbx_data_cutoff_low_absF": 0.0,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_isotropic_thermal_model": "RESTRAINED",
+        "pdbx_ls_cross_valid_method": "THROUGHOUT",
+        "pdbx_ls_sigma_F": 0.0,
+        "pdbx_ls_sigma_I": 0.0,
+        "pdbx_method_to_determine_struct": "MOLECULAR REPLACEMENT",
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "pdbx_starting_model": "PDB ENTRY 1JEQ",
+        "pdbx_stereochemistry_target_values": "Engh & Huber",
+        "solvent_model_details": "FLAT MODEL",
+        "solvent_model_param_bsol": 34.46,
+        "solvent_model_param_ksol": 0.36
+      }
+    ],
+    "archive_validation_summary": {
+      "pdbx_vrpt_summary": {
+        "attempted_validation_steps": "molprobity,validation-pack,validation_schema,percentiles,writexml,writecif,writepdf",
+        "ligands_for_buster_report": "N",
+        "report_creation_date": "2026-03-06T12:53:00.000+00:00"
+      },
+      "pdbx_vrpt_summary_geometry": [
+        {
+          "angles_RMSZ": 0.91,
+          "bonds_RMSZ": 0.42,
+          "clashscore": 15.66,
+          "num_H_reduce": 8917,
+          "num_angles_RMSZ": 13016,
+          "num_bonds_RMSZ": 9500,
+          "percent_ramachandran_outliers": 0.59,
+          "percent_rotamer_outliers": 1.95
+        }
+      ]
+    },
+    "full_validation_report_url": "https://files.rcsb.org/pub/pdb/validation_reports/je/1jey/1jey_full_validation.pdf",
+    "full_report_review_status": "not_reviewed",
+    "local_density_or_map_review_status": "not_reviewed",
+    "scientific_accuracy_percent": null
+  },
+  "review": {
+    "status": "identity_and_source_metadata_reviewed_with_limitations",
+    "scope": "Pinned archive identity, assembly presence, source checksum, coverage and summary metrics; no independent experimental re-refinement or local-map review."
+  },
+  "nuclear_context": {
+    "copies_per_default_g1_nucleus": null,
+    "placement": "not_assigned",
+    "evidence_note": "A structure entry establishes a model, not its quantity or position in the default cell."
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "automatic_atom_budget": 250000,
+    "large_assembly_requires_chunking": false
+  },
+  "limitations": [
+    "The Ku80 construct is shorter than the full protein and some deposited regions remain unresolved.",
+    "The structure does not include DNA-PKcs, ligase IV or the complete nonhomologous end-joining machinery.",
+    "Use a specifically identified illustrative DNA-repair site; do not imply that every chromatin region is broken.",
+    "Ku70, Ku80, the Ku assembly and its DNA substrate require explicit membership accounting, not additive abundance rows."
+  ],
+  "research_reference": {
+    "pdb_id": "1JEY",
+    "name": "Human Ku70–Ku80 heterodimer bound to DNA",
+    "suggested_component": "chromatin.dna_repair.ku_dna_end",
+    "import_priority": "first_small_asset",
+    "organism": {
+      "protein_source": "Homo sapiens",
+      "taxonomy_id": 9606,
+      "nucleic_acid_source": "Experimental DNA substrate, 21-nt and 34-nt chains",
+      "expression_system": "Spodoptera frugiperda"
+    },
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 2.5,
+    "assembly": {
+      "preferred_id": "1",
+      "description": "Ku70–Ku80 heterodimer with a DNA-end substrate.",
+      "structural_scope": "DNA-bound repair recognition complex"
+    },
+    "coverage": {
+      "entry_atom_count": 9472,
+      "entry_modeled_residue_count": 1072,
+      "entry_deposited_residue_count": 1229,
+      "scope_note": "Entry/construct coverage is not full-length physiological-complex completeness."
+    },
+    "provenance_class": "experimental_coordinate_model",
+    "suggested_representations": [
+      "source-derived Ku/DNA surface",
+      "protein and DNA backbone",
+      "deposited atoms"
+    ],
+    "limitations": [
+      "The Ku80 construct is shorter than the full protein and some deposited regions remain unresolved.",
+      "The structure does not include DNA-PKcs, ligase IV or the complete nonhomologous end-joining machinery.",
+      "Use a specifically identified illustrative DNA-repair site; do not imply that every chromatin region is broken.",
+      "Ku70, Ku80, the Ku assembly and its DNA substrate require explicit membership accounting, not additive abundance rows."
+    ],
+    "sources": [
+      {
+        "kind": "PDB primary archive",
+        "url": "https://www.rcsb.org/structure/1JEY"
+      },
+      {
+        "kind": "Primary paper",
+        "url": "https://doi.org/10.1038/35088000"
+      }
+    ]
+  }
+}

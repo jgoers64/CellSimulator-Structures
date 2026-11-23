@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-ala",
+  "name": "L-Alanine, CCD free-component state",
+  "aliases": [
+    "Free proteinogenic amino acids"
+  ],
+  "coordinate_type": "idealized_chemical_component",
+  "coordinate_units": "angstrom",
+  "units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "source": "wwPDB CCD ALA, computed ideal coordinates",
+  "source_url": "https://www.rcsb.org/ligand/ALA",
+  "source_sha256": "6d32b34d4f7b3ddf0cd3dff3f98ddaf7649bc5303ff9a8bd95ba62283f47a1ca",
+  "formal_charge": 0,
+  "total_charge": 0.0,
+  "charge_note": "Exact CCD formal charge; no partial charges or force-field parameters assigned.",
+  "formula": "C3 H7 N O2",
+  "notes": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "atoms": [
+    {
+      "element": "N",
+      "atom_name": "N",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "CA",
+      "formal_charge": 0,
+      "stereochemistry": "S",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "CB",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "OXT",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": true
+    },
+    {
+      "element": "H",
+      "atom_name": "H",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "H2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": true
+    },
+    {
+      "element": "H",
+      "atom_name": "HA",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HB1",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HB2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HB3",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HXT",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": true
+    }
+  ],
+  "coords": [
+    [
+      -0.966,
+      0.493,
+      1.5
+    ],
+    [
+      0.257,
+      0.418,
+      0.692
+    ],
+    [
+      -0.094,
+      0.017,
+      -0.716
+    ],
+    [
+      -1.056,
+      -0.682,
+      -0.923
+    ],
+    [
+      1.204,
+      -0.62,
+      1.296
+    ],
+    [
+      0.661,
+      0.439,
+      -1.742
+    ],
+    [
+      -1.383,
+      -0.425,
+      1.482
+    ],
+    [
+      -0.676,
+      0.661,
+      2.452
+    ],
+    [
+      0.746,
+      1.392,
+      0.682
+    ],
+    [
+      1.459,
+      -0.33,
+      2.316
+    ],
+    [
+      0.715,
+      -1.594,
+      1.307
+    ],
+    [
+      2.113,
+      -0.676,
+      0.697
+    ],
+    [
+      0.435,
+      0.182,
+      -2.647
+    ]
+  ],
+  "bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      5,
+      12
+    ]
+  ],
+  "bond_orders": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "bond_details": [
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "DOUB",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    }
+  ]
+}

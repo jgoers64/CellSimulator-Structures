@@ -1,0 +1,504 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-ict",
+  "name": "(1R,2S)-Isocitric acid, neutral representative",
+  "aliases": [
+    "Isocitrate"
+  ],
+  "coordinate_type": "idealized_chemical_component",
+  "coordinate_units": "angstrom",
+  "units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "source": "wwPDB CCD ICT, computed ideal coordinates",
+  "source_url": "https://www.rcsb.org/ligand/ICT",
+  "source_sha256": "a84d92b668da9503df112e231664aef081aaca6acbc2eacd91c7adf2774ad803",
+  "formal_charge": 0,
+  "total_charge": 0.0,
+  "charge_note": "Exact CCD formal charge; no partial charges or force-field parameters assigned.",
+  "formula": "C6 H8 O7",
+  "notes": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "atoms": [
+    {
+      "element": "C",
+      "atom_name": "C1",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O1",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C2",
+      "formal_charge": 0,
+      "stereochemistry": "R",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O7",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C3",
+      "formal_charge": 0,
+      "stereochemistry": "S",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C4",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C5",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O3",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O4",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "C",
+      "atom_name": "C6",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O5",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O6",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HO2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "H2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HO7",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "H3",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "H41",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "H42",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HO4",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "H",
+      "atom_name": "HO6",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    }
+  ],
+  "coords": [
+    [
+      -1.185,
+      0.15,
+      1.711
+    ],
+    [
+      -1.183,
+      -0.574,
+      2.678
+    ],
+    [
+      -1.523,
+      1.443,
+      1.842
+    ],
+    [
+      -0.808,
+      -0.396,
+      0.358
+    ],
+    [
+      -0.492,
+      -1.784,
+      0.477
+    ],
+    [
+      0.409,
+      0.36,
+      -0.175
+    ],
+    [
+      0.791,
+      -0.194,
+      -1.549
+    ],
+    [
+      -0.301,
+      0.115,
+      -2.539
+    ],
+    [
+      -1.232,
+      0.813,
+      -2.211
+    ],
+    [
+      -0.24,
+      -0.382,
+      -3.784
+    ],
+    [
+      1.565,
+      0.187,
+      0.775
+    ],
+    [
+      1.407,
+      -0.403,
+      1.817
+    ],
+    [
+      2.77,
+      0.69,
+      0.465
+    ],
+    [
+      -1.764,
+      1.794,
+      2.71
+    ],
+    [
+      -1.644,
+      -0.271,
+      -0.329
+    ],
+    [
+      0.25,
+      -1.85,
+      1.093
+    ],
+    [
+      0.168,
+      1.419,
+      -0.266
+    ],
+    [
+      1.723,
+      0.264,
+      -1.88
+    ],
+    [
+      0.923,
+      -1.274,
+      -1.48
+    ],
+    [
+      -0.942,
+      -0.182,
+      -4.419
+    ],
+    [
+      3.512,
+      0.58,
+      1.076
+    ]
+  ],
+  "bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      14
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      16
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      17
+    ],
+    [
+      6,
+      18
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      9,
+      19
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      12,
+      20
+    ]
+  ],
+  "bond_orders": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1
+  ],
+  "bond_details": [
+    {
+      "source_order": "DOUB",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "DOUB",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "DOUB",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    },
+    {
+      "source_order": "SING",
+      "aromatic": false,
+      "stereochemistry": "N"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "id": "pdb-8as5",
+  "name": "Human nucleophosmin 1 pentameric core",
+  "provenance_class": "experimental_coordinate_model",
+  "coordinate_status": "pinned_source_available",
+  "source": {
+    "database": "wwPDB / RCSB PDB",
+    "pdb_id": "8AS5",
+    "entry_url": "https://www.rcsb.org/structure/8AS5",
+    "coordinate_url": "https://files.rcsb.org/download/8AS5.cif.gz",
+    "coordinate_format": "PDBx/mmCIF",
+    "coordinate_sha256": "9d31c63636de65485e9308eb6fdf5a8d19ee2aa262488ed06150e543f0107924",
+    "checksum_scope": "uncompressed original mmCIF bytes",
+    "coordinate_bytes": 479787,
+    "coordinate_units": "angstrom",
+    "retrieved_at_utc": "2026-11-23T03:59:33+00:00",
+    "entry_version": {
+      "deposit_date": "2022-08-18T00:00:00.000+00:00",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2023-02-15T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 1,
+      "revision_date": "2024-07-24T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "primary_citation": {
+      "country": "UK",
+      "id": "primary",
+      "journal_abbrev": "Pnas Nexus",
+      "journal_id_ISSN": "2752-6542",
+      "journal_volume": "2",
+      "page_first": "pgac303",
+      "page_last": "pgac303",
+      "pdbx_database_id_DOI": "10.1093/pnasnexus/pgac303",
+      "pdbx_database_id_PubMed": 36743470,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "0000-0001-6223-3350",
+        "0000-0002-1890-5524",
+        "?",
+        "?",
+        "?",
+        "0000-0002-5543-5963",
+        "0000-0002-7115-9751",
+        "?",
+        "0000-0001-6376-7792",
+        "0000-0002-8719-4703",
+        "0000-0003-0551-3545",
+        "?",
+        "0000-0002-7958-4074"
+      ],
+      "rcsb_authors": [
+        "Saluri, M.",
+        "Leppert, A.",
+        "Gese, G.V.",
+        "Sahin, C.",
+        "Lama, D.",
+        "Kaldmae, M.",
+        "Chen, G.",
+        "Elofsson, A.",
+        "Allison, T.M.",
+        "Arsenian-Henriksson, M.",
+        "Johansson, J.",
+        "Lane, D.P.",
+        "Hallberg, B.M.",
+        "Landreh, M."
+      ],
+      "rcsb_journal_abbrev": "PNAS Nexus",
+      "title": "A \"grappling hook\" interaction connects self-assembly and chaperone activity of Nucleophosmin 1.",
+      "year": 2023
+    },
+    "metadata_url": "https://data.rcsb.org/rest/v1/core/entry/8AS5",
+    "metadata_sha256": "2d6bff898075c6c8e6edf1acf67d6a4e9db10689dd12b96384fbc83a64069b2d"
+  },
+  "assembly": {
+    "id": "1",
+    "description": "C5-symmetric NPM1 homopentamer.",
+    "author_determined": true,
+    "software_determined": false,
+    "oligomeric_details": "pentameric",
+    "atom_count_upper_bound": 3673,
+    "coordinate_scope": "Original asymmetric unit plus explicitly selected archive assembly operators"
+  },
+  "entities": {
+    "descriptions": [
+      {
+        "id": "1",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Nucleophosmin",
+        "formula_weight": "32708.141",
+        "pdbx_number_of_molecules": "5",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      }
+    ],
+    "polymers": [
+      {
+        "entity_id": "1",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "SMEDSMDMDMSPLRPQNYLFGCELKADKDYHFKVDNDENEHQLSLRTVSLGAGAKDELHIVEAEAMNYEGSPIKVTLATL\nKMSVQPTVSLGGFEITPPVVLRLKCGSGPVHISGQHLVAVEEDAESEDEEEEDVKLLSISGKRSAPGGGSKVPQKKVKLA\nADEDDDDDDEEDDDEDDDDDDFDDEEAEEKAPVKKSIRDTPAKNAQKSNQNGKDSKPSSTPRSKGQESFKKQEKTPKTPK\nGPSSVEDIKAKMQASIEKGGSLPKVEAKFINYVKNCFRMTDQEAIQDLWQWRKSL",
+        "pdbx_seq_one_letter_code_can": "SMEDSMDMDMSPLRPQNYLFGCELKADKDYHFKVDNDENEHQLSLRTVSLGAGAKDELHIVEAEAMNYEGSPIKVTLATL\nKMSVQPTVSLGGFEITPPVVLRLKCGSGPVHISGQHLVAVEEDAESEDEEEEDVKLLSISGKRSAPGGGSKVPQKKVKLA\nADEDDDDDDEEDDDEDDDDDDFDDEEAEEKAPVKKSIRDTPAKNAQKSNQNGKDSKPSSTPRSKGQESFKKQEKTPKTPK\nGPSSVEDIKAKMQASIEKGGSLPKVEAKFINYVKNCFRMTDQEAIQDLWQWRKSL",
+        "pdbx_strand_id": "A,B,C,D,E",
+        "pdbx_target_identifier": null
+      }
+    ],
+    "genetically_engineered_source": [
+      {
+        "entity_id": "1",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": "Biological sequence",
+        "pdbx_beg_seq_num": "1",
+        "pdbx_end_seq_num": "295",
+        "gene_src_common_name": "human",
+        "gene_src_genus": null,
+        "pdbx_gene_src_gene": "NPM1, NPM",
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": null,
+        "pdbx_host_org_scientific_name": "Escherichia coli",
+        "pdbx_host_org_ncbi_taxonomy_id": "562",
+        "host_org_genus": null,
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": null,
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": null,
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": null,
+        "plasmid_details": null,
+        "pdbx_description": null
+      }
+    ],
+    "natural_source": [],
+    "synthetic_source": [],
+    "sequence_references": [
+      {
+        "id": "1",
+        "db_name": "UNP",
+        "db_code": "NPM_HUMAN",
+        "pdbx_db_accession": "P06748",
+        "pdbx_db_isoform": null,
+        "entity_id": "1",
+        "pdbx_seq_one_letter_code": "MEDSMDMDMSPLRPQNYLFGCELKADKDYHFKVDNDENEHQLSLRTVSLGAGAKDELHIVEAEAMNYEGSPIKVTLATLK\nMSVQPTVSLGGFEITPPVVLRLKCGSGPVHISGQHLVAVEEDAESEDEEEEDVKLLSISGKRSAPGGGSKVPQKKVKLAA\nDEDDDDDDEEDDDEDDDDDDFDDEEAEEKAPVKKSIRDTPAKNAQKSNQNGKDSKPSSTPRSKGQESFKKQEKTPKTPKG\nPSSVEDIKAKMQASIEKGGSLPKVEAKFINYVKNCFRMTDQEAIQDLWQWRKSL",
+        "pdbx_align_begin": "1"
+      }
+    ]
+  },
+  "coverage": {
+    "deposited_atom_count": 3673,
+    "modeled_polymer_residues": 481,
+    "deposited_polymer_residues": 1475,
+    "unmodeled_polymer_residues": 994,
+    "deposited_hydrogen_count": 0,
+    "unobserved_residue_record_count": 994,
+    "unobserved_atom_record_count": 0,
+    "full_records_path": "structures/nuclear/pdb-8as5/coverage.json.gz",
+    "full_records_sha256": "3e8b8012d82b68926280e9550f387556dde398bdad89f2c371af1c3009b1730d",
+    "note": "Counts describe deposited constructs; they do not establish full canonical-sequence coverage or nuclear abundance."
+  },
+  "quality": {
+    "methods": [
+      {
+        "method": "ELECTRON MICROSCOPY"
+      }
+    ],
+    "resolution_angstrom": [
+      3.53
+    ],
+    "refinement": null,
+    "archive_validation_summary": {
+      "pdbx_vrpt_summary": {
+        "attempted_validation_steps": "visualanalysis,molprobity,validation-pack,validation_schema,percentiles,writexml,writecif,writepdf",
+        "ligands_for_buster_report": "N",
+        "report_creation_date": "2026-03-07T02:08:00.000+00:00"
+      },
+      "pdbx_vrpt_summary_em": [
+        {
+          "Q_score": 0.412,
+          "atom_inclusion_all_atoms": 0.664,
+          "atom_inclusion_backbone": 0.786,
+          "author_provided_fsc_resolution_by_cutoff_halfbit": 3.56,
+          "author_provided_fsc_resolution_by_cutoff_onebit": 3.78,
+          "author_provided_fsc_resolution_by_cutoff_pt_143": 3.52,
+          "author_provided_fsc_resolution_by_cutoff_pt_333": 3.77,
+          "author_provided_fsc_resolution_by_cutoff_pt_5": 3.89,
+          "author_provided_fsc_resolution_by_cutoff_threesigma": 2.8,
+          "calculated_fsc_resolution_by_cutoff_halfbit": 4.01,
+          "calculated_fsc_resolution_by_cutoff_onebit": 4.28,
+          "calculated_fsc_resolution_by_cutoff_pt_143": 3.94,
+          "calculated_fsc_resolution_by_cutoff_pt_333": 4.26,
+          "calculated_fsc_resolution_by_cutoff_pt_5": 6.21,
+          "calculated_fsc_resolution_by_cutoff_threesigma": 3.53,
+          "contour_level_primary_map": 0.0015,
+          "exp_method": "electron microscopy"
+        }
+      ],
+      "pdbx_vrpt_summary_geometry": [
+        {
+          "angles_RMSZ": 0.66,
+          "bonds_RMSZ": 0.5,
+          "clashscore": 11.75,
+          "num_H_reduce": 3729,
+          "num_angles_RMSZ": 5052,
+          "num_bonds_RMSZ": 3741,
+          "percent_ramachandran_outliers": 0.22,
+          "percent_rotamer_outliers": 2.18
+        }
+      ]
+    },
+    "full_validation_report_url": "https://files.rcsb.org/pub/pdb/validation_reports/as/8as5/8as5_full_validation.pdf",
+    "full_report_review_status": "not_reviewed",
+    "local_density_or_map_review_status": "not_reviewed",
+    "scientific_accuracy_percent": null
+  },
+  "review": {
+    "status": "identity_and_source_metadata_reviewed_with_limitations",
+    "scope": "Pinned archive identity, assembly presence, source checksum, coverage and summary metrics; no independent experimental re-refinement or local-map review."
+  },
+  "nuclear_context": {
+    "copies_per_default_g1_nucleus": null,
+    "placement": "not_assigned",
+    "evidence_note": "A structure entry establishes a model, not its quantity or position in the default cell."
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "automatic_atom_budget": 250000,
+    "large_assembly_requires_chunking": false
+  },
+  "limitations": [
+    "The majority of the deposited sequence lacks resolved coordinates; do not present the compact core as the whole physical extent of full-length NPM1.",
+    "Disordered acidic regions and flexible C-terminal interactions do not have one fixed experimentally resolved conformation in this entry.",
+    "NPM1 pentamers and their five constituent chains must not be counted as six independent molecular populations.",
+    "4N8M is a mouse NPM1 domain structure; use this verified human entry for the human environment."
+  ],
+  "research_reference": {
+    "pdb_id": "8AS5",
+    "name": "Human nucleophosmin 1 pentameric core",
+    "suggested_component": "nucleolus.npm1",
+    "import_priority": "first_small_asset",
+    "organism": {
+      "protein_source": "Homo sapiens",
+      "taxonomy_id": 9606,
+      "nucleic_acid_source": "No RNA included",
+      "expression_system": "Escherichia coli"
+    },
+    "method": "Single-particle cryo-electron microscopy",
+    "resolution_angstrom": 3.53,
+    "emdb_id": "EMD-15606",
+    "assembly": {
+      "preferred_id": "1",
+      "description": "C5-symmetric NPM1 homopentamer.",
+      "structural_scope": "Ordered core from a partially disordered full-length protein preparation"
+    },
+    "coverage": {
+      "entry_atom_count": 3673,
+      "entry_modeled_residue_count": 481,
+      "entry_deposited_residue_count": 1475,
+      "scope_note": "Only the resolved core is represented. These counts describe the deposited construct, not a complete pentameric molecular envelope."
+    },
+    "provenance_class": "experimental_coordinate_model",
+    "suggested_representations": [
+      "resolved-core surface",
+      "resolved protein backbone",
+      "deposited core atoms",
+      "separately labeled flexible-region extent if later modeled"
+    ],
+    "limitations": [
+      "The majority of the deposited sequence lacks resolved coordinates; do not present the compact core as the whole physical extent of full-length NPM1.",
+      "Disordered acidic regions and flexible C-terminal interactions do not have one fixed experimentally resolved conformation in this entry.",
+      "NPM1 pentamers and their five constituent chains must not be counted as six independent molecular populations.",
+      "4N8M is a mouse NPM1 domain structure; use this verified human entry for the human environment."
+    ],
+    "sources": [
+      {
+        "kind": "PDB primary archive",
+        "url": "https://www.rcsb.org/structure/8AS5"
+      },
+      {
+        "kind": "EMDB map",
+        "url": "https://www.ebi.ac.uk/emdb/EMD-15606"
+      },
+      {
+        "kind": "Primary paper",
+        "url": "https://doi.org/10.1093/pnasnexus/pgac303"
+      },
+      {
+        "kind": "Species cross-check for excluded alternative",
+        "url": "https://www.rcsb.org/structure/4N8M"
+      }
+    ]
+  }
+}

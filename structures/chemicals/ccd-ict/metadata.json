@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-ict",
+  "name": "(1R,2S)-Isocitric acid, neutral representative",
+  "inventory_name": "Isocitrate",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "ICT",
+    "url": "https://files.rcsb.org/ligands/download/ICT.cif",
+    "entry_url": "https://www.rcsb.org/ligand/ICT",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-ict/source.cif",
+    "sha256": "a84d92b668da9503df112e231664aef081aaca6acbc2eacd91c7adf2774ad803",
+    "retrieved_at_utc": "2026-11-23T03:57:37.877184+00:00",
+    "ccd_modified_date": "2011-06-04",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "ISOCITRIC ACID",
+    "formula": "C6 H8 O7",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "ICT",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C(CC(=O)O)C(O)C(=O)O"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[C@H]([C@H](CC(O)=O)C(O)=O)C(O)=O"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[CH]([CH](CC(O)=O)C(O)=O)C(O)=O"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C([C@@H]([C@H](C(=O)O)O)C(=O)O)C(=O)O"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C(C(C(C(=O)O)O)C(=O)O)C(=O)O"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C6H8O7/c7-3(8)1-2(5(10)11)4(9)6(12)13/h2,4,9H,1H2,(H,7,8)(H,10,11)(H,12,13)/t2-,4+/m0/s1"
+      },
+      {
+        "comp_id": "ICT",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "ODBLHEXUDAPZAU-ZAFYKAAXSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 21,
+  "bond_count": 20,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

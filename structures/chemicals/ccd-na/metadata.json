@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-na",
+  "name": "Sodium ion",
+  "inventory_name": "Sodium (Na+)",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "NA",
+    "url": "https://files.rcsb.org/ligands/download/NA.cif",
+    "entry_url": "https://www.rcsb.org/ligand/NA",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-na/source.cif",
+    "sha256": "325116dae44c0d864aec19f5a44e1236ef309cc2b54e564d8189ee4c024a20ea",
+    "retrieved_at_utc": "2026-11-23T03:57:08.482455+00:00",
+    "ccd_modified_date": "2011-06-04",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "SODIUM ION",
+    "formula": "Na",
+    "formal_charge": 1,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "NA",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "[Na+]"
+      },
+      {
+        "comp_id": "NA",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "[Na+]"
+      },
+      {
+        "comp_id": "NA",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "[Na+]"
+      },
+      {
+        "comp_id": "NA",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "[Na+]"
+      },
+      {
+        "comp_id": "NA",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "[Na+]"
+      },
+      {
+        "comp_id": "NA",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/Na/q+1"
+      },
+      {
+        "comp_id": "NA",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "FKNQFGJONOIPTF-UHFFFAOYSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 1,
+  "bond_count": 0,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

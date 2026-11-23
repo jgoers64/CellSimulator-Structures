@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-mg",
+  "name": "Magnesium ion",
+  "aliases": [
+    "Magnesium (Mg2+)"
+  ],
+  "coordinate_type": "idealized_chemical_component",
+  "coordinate_units": "angstrom",
+  "units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "source": "wwPDB CCD MG, computed ideal coordinates",
+  "source_url": "https://www.rcsb.org/ligand/MG",
+  "source_sha256": "b7d9dd418bc6c6faad45284c27a54c9bee13b2d9a249db31f78284b9a61b2296",
+  "formal_charge": 2,
+  "total_charge": 2.0,
+  "charge_note": "Exact CCD formal charge; no partial charges or force-field parameters assigned.",
+  "formula": "Mg",
+  "notes": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "atoms": [
+    {
+      "element": "Mg",
+      "atom_name": "MG",
+      "formal_charge": 2,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    }
+  ],
+  "coords": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "bonds": [],
+  "bond_orders": [],
+  "bond_details": []
+}

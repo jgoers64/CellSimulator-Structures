@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-ser",
+  "name": "L-Serine, CCD free-component state",
+  "inventory_name": "Free proteinogenic amino acids",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "SER",
+    "url": "https://files.rcsb.org/ligands/download/SER.cif",
+    "entry_url": "https://www.rcsb.org/ligand/SER",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-ser/source.cif",
+    "sha256": "46db0296a07732854d2c3ca67ed0f74f4c82ddc5698d0e59f433039a5d7c88a0",
+    "retrieved_at_utc": "2026-11-23T03:57:37.917200+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "SERINE",
+    "formula": "C3 H7 N O3",
+    "formal_charge": 0,
+    "component_type": "L-PEPTIDE LINKING",
+    "descriptors": [
+      {
+        "comp_id": "SER",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C(N)CO"
+      },
+      {
+        "comp_id": "SER",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "N[C@@H](CO)C(O)=O"
+      },
+      {
+        "comp_id": "SER",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "N[CH](CO)C(O)=O"
+      },
+      {
+        "comp_id": "SER",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C([C@@H](C(=O)O)N)O"
+      },
+      {
+        "comp_id": "SER",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C(C(C(=O)O)N)O"
+      },
+      {
+        "comp_id": "SER",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C3H7NO3/c4-2(1-5)3(6)7/h2,5H,1,4H2,(H,6,7)/t2-/m0/s1"
+      },
+      {
+        "comp_id": "SER",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "MTCFGRXMJLQNBG-REOHCLBHSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 14,
+  "bond_count": 13,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

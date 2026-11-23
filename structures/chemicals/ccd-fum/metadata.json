@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-fum",
+  "name": "Fumaric acid, neutral representative of fumarate family",
+  "inventory_name": "Fumarate",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "FUM",
+    "url": "https://files.rcsb.org/ligands/download/FUM.cif",
+    "entry_url": "https://www.rcsb.org/ligand/FUM",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-fum/source.cif",
+    "sha256": "69ca0ee9fefcd03fd990201cd23ff50a3e82c889218b1e41ee27c407b58e80ca",
+    "retrieved_at_utc": "2026-11-23T03:57:37.881591+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "FUMARIC ACID",
+    "formula": "C4 H4 O4",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "FUM",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "12.01",
+        "descriptor": "O=C(O)\\C=C\\C(=O)O"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C4H4O4/c5-3(6)1-2-4(7)8/h1-2H,(H,5,6)(H,7,8)/b2-1+"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "VZCYOOQTPOCHFL-OWOJBTEDSA-N"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "OC(=O)\\C=C\\C(O)=O"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "OC(=O)C=CC(O)=O"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "C(=C/C(=O)O)\\C(=O)O"
+      },
+      {
+        "comp_id": "FUM",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "C(=CC(=O)O)C(=O)O"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 12,
+  "bond_count": 11,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

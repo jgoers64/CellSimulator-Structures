@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-u5p",
+  "name": "UMP, CCD neutral acid state",
+  "inventory_name": "UMP",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "U5P",
+    "url": "https://files.rcsb.org/ligands/download/U5P.cif",
+    "entry_url": "https://www.rcsb.org/ligand/U5P",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-u5p/source.cif",
+    "sha256": "40013dcede7b143aa739ffc26b7d503ccc34ae142333c04384bf71fc214b9c91",
+    "retrieved_at_utc": "2026-11-23T03:57:08.510158+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "URIDINE-5'-MONOPHOSPHATE",
+    "formula": "C9 H13 N2 O9 P",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "U5P",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C1NC(=O)N(C=C1)C2OC(C(O)C2O)COP(=O)(O)O"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[C@H]1[C@@H](O)[C@@H](O[C@@H]1CO[P](O)(O)=O)N2C=CC(=O)NC2=O"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[CH]1[CH](O)[CH](O[CH]1CO[P](O)(O)=O)N2C=CC(=O)NC2=O"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1=CN(C(=O)NC1=O)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1=CN(C(=O)NC1=O)C2C(C(C(O2)COP(=O)(O)O)O)O"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C9H13N2O9P/c12-5-1-2-11(9(15)10-5)8-7(14)6(13)4(20-8)3-19-21(16,17)18/h1-2,4,6-8,13-14H,3H2,(H,10,12,15)(H2,16,17,18)/t4-,6-,7-,8-/m1/s1"
+      },
+      {
+        "comp_id": "U5P",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "DJJCXFVJDGTHFX-XVFCMESISA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 34,
+  "bond_count": 35,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

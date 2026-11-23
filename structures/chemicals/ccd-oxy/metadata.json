@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-oxy",
+  "name": "Dioxygen, CCD ideal bond geometry",
+  "inventory_name": "Dissolved oxygen",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "OXY",
+    "url": "https://files.rcsb.org/ligands/download/OXY.cif",
+    "entry_url": "https://www.rcsb.org/ligand/OXY",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-oxy/source.cif",
+    "sha256": "a17b992972a62bc1e4bbc4294ac78c5a2d31a437e4ac0cabdbfa8a185f205f37",
+    "retrieved_at_utc": "2026-11-23T03:57:37.888671+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "OXYGEN MOLECULE",
+    "formula": "O2",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "OXY",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O=O"
+      },
+      {
+        "comp_id": "OXY",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O=O"
+      },
+      {
+        "comp_id": "OXY",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "O=O"
+      },
+      {
+        "comp_id": "OXY",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "O=O"
+      },
+      {
+        "comp_id": "OXY",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/O2/c1-2"
+      },
+      {
+        "comp_id": "OXY",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "MYMOFIZGZYHOMD-UHFFFAOYSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 2,
+  "bond_count": 1,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. This bond graph and static geometry do not model oxygen's electronic spin state.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "id": "pdb-6jlb",
+  "name": "Human lamin A/C N-terminal fragment tetramer",
+  "provenance_class": "experimental_coordinate_model",
+  "coordinate_status": "pinned_source_available",
+  "source": {
+    "database": "wwPDB / RCSB PDB",
+    "pdb_id": "6JLB",
+    "entry_url": "https://www.rcsb.org/structure/6JLB",
+    "coordinate_url": "https://files.rcsb.org/download/6JLB.cif.gz",
+    "coordinate_format": "PDBx/mmCIF",
+    "coordinate_sha256": "32b3bbec808d715e90cdfe81c6bb3426174582e13fe4fd4e061c7ea1d71489bf",
+    "checksum_scope": "uncompressed original mmCIF bytes",
+    "coordinate_bytes": 786346,
+    "coordinate_units": "angstrom",
+    "retrieved_at_utc": "2026-11-23T04:00:39+00:00",
+    "entry_version": {
+      "deposit_date": "2019-03-04T00:00:00.000+00:00",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2019-09-11T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 1,
+      "revision_date": "2024-10-23T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "primary_citation": {
+      "country": "UK",
+      "id": "primary",
+      "journal_abbrev": "Nat Commun",
+      "journal_id_ISSN": "2041-1723",
+      "journal_volume": "10",
+      "page_first": "3757",
+      "page_last": "3757",
+      "pdbx_database_id_DOI": "10.1038/s41467-019-11684-x",
+      "pdbx_database_id_PubMed": 31434876,
+      "rcsb_ORCID_identifiers": [
+        "0000-0002-4175-5181",
+        "0000-0002-7964-4751",
+        "?",
+        "0000-0003-4603-8445",
+        "?",
+        "0000-0002-5746-7117",
+        "0000-0001-6192-5996",
+        "?",
+        "0000-0003-4813-748X"
+      ],
+      "rcsb_authors": [
+        "Ahn, J.",
+        "Jo, I.",
+        "Kang, S.M.",
+        "Hong, S.",
+        "Kim, S.",
+        "Jeong, S.",
+        "Kim, Y.H.",
+        "Park, B.J.",
+        "Ha, N.C."
+      ],
+      "rcsb_journal_abbrev": "Nat Commun",
+      "title": "Structural basis for lamin assembly at the molecular level.",
+      "year": 2019
+    },
+    "metadata_url": "https://data.rcsb.org/rest/v1/core/entry/6JLB",
+    "metadata_sha256": "7209fab3084691d89a40ae984b2adb28d76f183b8a7dea6b010d795a66e9a0e7"
+  },
+  "assembly": {
+    "id": "1",
+    "description": "Tetrameric arrangement of two antiparallel coiled-coil dimers from an approximately 1–300 lamin fragment.",
+    "author_determined": true,
+    "software_determined": true,
+    "oligomeric_details": "tetrameric",
+    "atom_count_upper_bound": 7161,
+    "coordinate_scope": "Original asymmetric unit plus explicitly selected archive assembly operators"
+  },
+  "entities": {
+    "descriptions": [
+      {
+        "id": "1",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Lamin A/C",
+        "formula_weight": "35055.629",
+        "pdbx_number_of_molecules": "4",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      }
+    ],
+    "polymers": [
+      {
+        "entity_id": "1",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "yes",
+        "pdbx_seq_one_letter_code": "GA(MSE)D(MSE)ETPSQRRATRSGAQASSTPLSPTRITRLQEKEDLQELNDRLAVYIDRVRSLETENAGLRLRITESEE\nVVSREVSGIKAAYEAELGDARKTLDSVAKERARLQLELSKVREEFKELKARNTKKEGDLIAAQARLKDLEALLNSKEAAL\nSTALSEKRTLEGELHDLRGQVAKLEAALGEAKKQLQDE(MSE)LRRVDAENRLQT(MSE)KEELDFQKNIYSEELRETKR\nRHETRLVEIDNGKQREFESRLADALQELRAQHEDQVEQYKKELEKTYSAKLDNARQSAERNSNLVGAAHEELQQSRIRID",
+        "pdbx_seq_one_letter_code_can": "GAMDMETPSQRRATRSGAQASSTPLSPTRITRLQEKEDLQELNDRLAVYIDRVRSLETENAGLRLRITESEEVVSREVSG\nIKAAYEAELGDARKTLDSVAKERARLQLELSKVREEFKELKARNTKKEGDLIAAQARLKDLEALLNSKEAALSTALSEKR\nTLEGELHDLRGQVAKLEAALGEAKKQLQDEMLRRVDAENRLQTMKEELDFQKNIYSEELRETKRRHETRLVEIDNGKQRE\nFESRLADALQELRAQHEDQVEQYKKELEKTYSAKLDNARQSAERNSNLVGAAHEELQQSRIRID",
+        "pdbx_strand_id": "A,B,C,D",
+        "pdbx_target_identifier": null
+      }
+    ],
+    "genetically_engineered_source": [
+      {
+        "entity_id": "1",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": "Biological sequence",
+        "pdbx_beg_seq_num": "1",
+        "pdbx_end_seq_num": "304",
+        "gene_src_common_name": "Human",
+        "gene_src_genus": null,
+        "pdbx_gene_src_gene": "LMNA, LMN1",
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": null,
+        "pdbx_host_org_scientific_name": "Escherichia coli BL21(DE3)",
+        "pdbx_host_org_ncbi_taxonomy_id": "469008",
+        "host_org_genus": null,
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": "BL21(DE3)",
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": null,
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": null,
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": null,
+        "plasmid_details": null,
+        "pdbx_description": null
+      }
+    ],
+    "natural_source": [],
+    "synthetic_source": [],
+    "sequence_references": [
+      {
+        "id": "1",
+        "db_name": "UNP",
+        "db_code": "LMNA_HUMAN",
+        "pdbx_db_accession": "P02545",
+        "pdbx_db_isoform": null,
+        "entity_id": "1",
+        "pdbx_seq_one_letter_code": "METPSQRRATRSGAQASSTPLSPTRITRLQEKEDLQELNDRLAVYIDRVRSLETENAGLRLRITESEEVVSREVSGIKAA\nYEAELGDARKTLDSVAKERARLQLELSKVREEFKELKARNTKKEGDLIAAQARLKDLEALLNSKEAALSTALSEKRTLEG\nELHDLRGQVAKLEAALGEAKKQLQDEMLRRVDAENRLQTMKEELDFQKNIYSEELRETKRRHETRLVEIDNGKQREFESR\nLADALQELRAQHEDQVEQYKKELEKTYSAKLDNARQSAERNSNLVGAAHEELQQSRIRID",
+        "pdbx_align_begin": "1"
+      }
+    ]
+  },
+  "coverage": {
+    "deposited_atom_count": 7161,
+    "modeled_polymer_residues": 886,
+    "deposited_polymer_residues": 1216,
+    "unmodeled_polymer_residues": 330,
+    "deposited_hydrogen_count": 0,
+    "unobserved_residue_record_count": 330,
+    "unobserved_atom_record_count": 0,
+    "full_records_path": "structures/nuclear/pdb-6jlb/coverage.json.gz",
+    "full_records_sha256": "a11c62279c4deb1a51f938177d83648442359fc696171373f1d829332f6dde82",
+    "note": "Counts describe deposited constructs; they do not establish full canonical-sequence coverage or nuclear abundance."
+  },
+  "quality": {
+    "methods": [
+      {
+        "crystals_number": 1,
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "resolution_angstrom": [
+      3.205
+    ],
+    "refinement": [
+      {
+        "details": "The entry contains friedel pairs in F_plus/minus columns.",
+        "ls_R_factor_R_free": 0.2605,
+        "ls_R_factor_R_work": 0.207,
+        "ls_R_factor_obs": 0.2112,
+        "ls_d_res_high": 3.205,
+        "ls_d_res_low": 46.191,
+        "ls_number_reflns_R_free": 3123,
+        "ls_number_reflns_obs": 40280,
+        "ls_percent_reflns_R_free": 7.75,
+        "ls_percent_reflns_obs": 69.74,
+        "overall_SU_ML": 0.29,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_ls_cross_valid_method": "FREE R-VALUE",
+        "pdbx_ls_sigma_F": 1.53,
+        "pdbx_method_to_determine_struct": "SAD",
+        "pdbx_overall_phase_error": 25.17,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "pdbx_solvent_shrinkage_radii": 0.9,
+        "pdbx_solvent_vdw_probe_radii": 1.11
+      }
+    ],
+    "archive_validation_summary": {
+      "pdbx_vrpt_summary": {
+        "attempted_validation_steps": "molprobity,validation-pack,xtriage,eds,validation_schema,percentiles,writexml,writecif,writepdf",
+        "ligands_for_buster_report": "N",
+        "report_creation_date": "2026-03-09T05:22:00.000+00:00"
+      },
+      "pdbx_vrpt_summary_diffraction": [
+        {
+          "B_factor_type": "FULL",
+          "CCP4_version": "9.0.010 (Gargrove)",
+          "DCC_R": 0.2068,
+          "DCC_Rfree": 0.2584,
+          "EDS_R": 0.2376,
+          "EDS_res_high": 3.21,
+          "EDS_res_low": 46.19,
+          "Fo_Fc_correlation": 0.897,
+          "I_over_sigma": "5.03(3.19A)",
+          "Padilla_Yeates_L2_mean": 0.254,
+          "Padilla_Yeates_L_mean": 0.428,
+          "Wilson_B_aniso": "[39.343,58.559,38.503,0.000,0.000,0.000]",
+          "Wilson_B_estimate": 40.903,
+          "acentric_outliers": 1,
+          "bulk_solvent_b": 27.919,
+          "bulk_solvent_k": 0.272,
+          "centric_outliers": 0,
+          "data_anisotropy": 0.441,
+          "data_completeness": 82.35,
+          "density_fitness_version": "1.0.12",
+          "exp_method": "x-ray",
+          "num_miller_indices": 25311,
+          "number_reflns_R_free": 1971,
+          "percent_RSRZ_outliers": 3.53,
+          "percent_free_reflections": 6.41,
+          "trans_NCS_details": "The largest off-origin peak in the Patterson function is 11.41% of the height of the origin peak. No significant pseudotranslation is detected."
+        }
+      ],
+      "pdbx_vrpt_summary_geometry": [
+        {
+          "angles_RMSZ": 0.32,
+          "bonds_RMSZ": 0.16,
+          "clashscore": 3.8,
+          "num_H_reduce": 7304,
+          "num_angles_RMSZ": 9571,
+          "num_bonds_RMSZ": 7183,
+          "percent_ramachandran_outliers": 0.0,
+          "percent_rotamer_outliers": 0.0
+        }
+      ]
+    },
+    "full_validation_report_url": "https://files.rcsb.org/pub/pdb/validation_reports/jl/6jlb/6jlb_full_validation.pdf",
+    "full_report_review_status": "not_reviewed",
+    "local_density_or_map_review_status": "not_reviewed",
+    "scientific_accuracy_percent": null
+  },
+  "review": {
+    "status": "identity_and_source_metadata_reviewed_with_limitations",
+    "scope": "Pinned archive identity, assembly presence, source checksum, coverage and summary metrics; no independent experimental re-refinement or local-map review."
+  },
+  "nuclear_context": {
+    "copies_per_default_g1_nucleus": null,
+    "placement": "not_assigned",
+    "evidence_note": "A structure entry establishes a model, not its quantity or position in the default cell."
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "automatic_atom_budget": 250000,
+    "large_assembly_requires_chunking": false
+  },
+  "limitations": [
+    "This is not a complete atomic human lamin filament or a measured nuclear lamina network.",
+    "Missing C-terminal portions and unobserved linkers cannot be stitched into an apparently experimental full-length structure.",
+    "Repeating fragments into a long lamina polymer is a separate modeling step with separate provenance.",
+    "Selenomethionine is an experimental chemical derivative; preserve and label it rather than silently dropping HETATM polymer residues or converting Se to S.",
+    "Lamin A and lamin C share sequence but differ at the C terminus; this shared fragment does not distinguish complete isoforms."
+  ],
+  "research_reference": {
+    "pdb_id": "6JLB",
+    "name": "Human lamin A/C N-terminal fragment tetramer",
+    "suggested_component": "nuclear_lamina.lamin_a_c_fragment",
+    "import_priority": "architecture_reference_then_local_detail",
+    "organism": {
+      "protein_source": "Homo sapiens",
+      "taxonomy_id": 9606,
+      "nucleic_acid_source": "None",
+      "expression_system": "Escherichia coli BL21(DE3)"
+    },
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 3.21,
+    "assembly": {
+      "preferred_id": "1",
+      "description": "Tetrameric arrangement of two antiparallel coiled-coil dimers from an approximately 1–300 lamin fragment.",
+      "structural_scope": "Experimental lamin fragment and assembly-interface reference"
+    },
+    "coverage": {
+      "entry_atom_count": 7161,
+      "entry_modeled_residue_count": 886,
+      "entry_deposited_residue_count": 1216,
+      "scope_note": "Construct coverage does not represent full-length lamin A/C. The deposited chains include selenomethionine."
+    },
+    "provenance_class": "experimental_coordinate_model",
+    "suggested_representations": [
+      "resolved coiled-coil fragment mesh",
+      "source-derived local atomic segment",
+      "separately labeled modeled filament arrangement"
+    ],
+    "limitations": [
+      "This is not a complete atomic human lamin filament or a measured nuclear lamina network.",
+      "Missing C-terminal portions and unobserved linkers cannot be stitched into an apparently experimental full-length structure.",
+      "Repeating fragments into a long lamina polymer is a separate modeling step with separate provenance.",
+      "Selenomethionine is an experimental chemical derivative; preserve and label it rather than silently dropping HETATM polymer residues or converting Se to S.",
+      "Lamin A and lamin C share sequence but differ at the C terminus; this shared fragment does not distinguish complete isoforms."
+    ],
+    "sources": [
+      {
+        "kind": "PDB primary archive",
+        "url": "https://www.rcsb.org/structure/6JLB"
+      },
+      {
+        "kind": "Primary paper",
+        "url": "https://doi.org/10.1038/s41467-019-11684-x"
+      }
+    ]
+  }
+}

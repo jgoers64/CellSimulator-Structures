@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-akg",
+  "name": "2-Oxoglutaric acid, neutral representative",
+  "inventory_name": "2-Oxoglutarate (alpha-ketoglutarate)",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "AKG",
+    "url": "https://files.rcsb.org/ligands/download/AKG.cif",
+    "entry_url": "https://www.rcsb.org/ligand/AKG",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-akg/source.cif",
+    "sha256": "82b8924b478f8f9efa0b5c907a65c58b8153f7af0afb137d02a4bfb363874cc6",
+    "retrieved_at_utc": "2026-11-23T03:57:37.878849+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "2-OXOGLUTARIC ACID",
+    "formula": "C5 H6 O5",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "AKG",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C(=O)CCC(=O)O"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C5H6O5/c6-3(5(9)10)1-2-4(7)8/h1-2H2,(H,7,8)(H,9,10)"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "KPGXRSRHYNQIFN-UHFFFAOYSA-N"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "OC(=O)CCC(=O)C(O)=O"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "OC(=O)CCC(=O)C(O)=O"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "C(CC(=O)O)C(=O)C(=O)O"
+      },
+      {
+        "comp_id": "AKG",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "C(CC(=O)O)C(=O)C(=O)O"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 16,
+  "bond_count": 15,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

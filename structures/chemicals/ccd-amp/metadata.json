@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-amp",
+  "name": "AMP, CCD neutral acid state",
+  "inventory_name": "AMP",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "AMP",
+    "url": "https://files.rcsb.org/ligands/download/AMP.cif",
+    "entry_url": "https://www.rcsb.org/ligand/AMP",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-amp/source.cif",
+    "sha256": "50778509f49ff4f4086f3904e7b7fe7a22592e06720a429d6b6f5a65db0cc3db",
+    "retrieved_at_utc": "2026-11-23T03:57:08.490755+00:00",
+    "ccd_modified_date": "2025-04-15",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "ADENOSINE MONOPHOSPHATE",
+    "formula": "C10 H14 N5 O7 P",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "AMP",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "12.01",
+        "descriptor": "O=P(O)(O)OCC3OC(n2cnc1c(ncnc12)N)C(O)C3O"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C10H14N5O7P/c11-8-5-9(13-2-12-8)15(3-14-5)10-7(17)6(16)4(22-10)1-21-23(18,19)20/h2-4,6-7,10,16-17H,1H2,(H2,11,12,13)(H2,18,19,20)/t4-,6-,7-,10-/m1/s1"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "UDMBCSSLTHHNCD-KQYNXXCUSA-N"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "Nc1ncnc2n(cnc12)[C@@H]3O[C@H](CO[P](O)(O)=O)[C@@H](O)[C@H]3O"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "Nc1ncnc2n(cnc12)[CH]3O[CH](CO[P](O)(O)=O)[CH](O)[CH]3O"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N"
+      },
+      {
+        "comp_id": "AMP",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.6",
+        "descriptor": "c1nc(c2c(n1)n(cn2)C3C(C(C(O3)COP(=O)(O)O)O)O)N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 37,
+  "bond_count": 39,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}
