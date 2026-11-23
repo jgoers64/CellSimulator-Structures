@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-oxy",
+  "name": "Dioxygen, CCD ideal bond geometry",
+  "aliases": [
+    "Dissolved oxygen"
+  ],
+  "coordinate_type": "idealized_chemical_component",
+  "coordinate_units": "angstrom",
+  "units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "source": "wwPDB CCD OXY, computed ideal coordinates",
+  "source_url": "https://www.rcsb.org/ligand/OXY",
+  "source_sha256": "a17b992972a62bc1e4bbc4294ac78c5a2d31a437e4ac0cabdbfa8a185f205f37",
+  "formal_charge": 0,
+  "total_charge": 0.0,
+  "charge_note": "Exact CCD formal charge; no partial charges or force-field parameters assigned.",
+  "formula": "O2",
+  "notes": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. This bond graph and static geometry do not model oxygen's electronic spin state.",
+  "atoms": [
+    {
+      "element": "O",
+      "atom_name": "O1",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    },
+    {
+      "element": "O",
+      "atom_name": "O2",
+      "formal_charge": 0,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    }
+  ],
+  "coords": [
+    [
+      0.0,
+      0.0,
+      -0.501
+    ],
+    [
+      0.0,
+      0.0,
+      0.501
+    ]
+  ],
+  "bonds": [
+    [
+      0,
+      1
+    ]
+  ],
+  "bond_orders": [
+    2
+  ],
+  "bond_details": [
+    {
+      "source_order": "DOUB",
+      "aromatic": false,
+      "stereochemistry": "N"
+    }
+  ]
+}

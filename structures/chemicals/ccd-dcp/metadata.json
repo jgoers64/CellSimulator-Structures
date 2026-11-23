@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-dcp",
+  "name": "dCTP, CCD neutral acid state",
+  "inventory_name": "dCTP",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "DCP",
+    "url": "https://files.rcsb.org/ligands/download/DCP.cif",
+    "entry_url": "https://www.rcsb.org/ligand/DCP",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-dcp/source.cif",
+    "sha256": "1a8b7080478b38b335c7c080e40b6d2aa12070ac30503f596c4030d88a7f4ee8",
+    "retrieved_at_utc": "2026-11-23T03:57:08.516237+00:00",
+    "ccd_modified_date": "2011-06-04",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "2'-DEOXYCYTIDINE-5'-TRIPHOSPHATE",
+    "formula": "C9 H16 N3 O13 P3",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "DCP",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=P(O)(O)OP(=O)(O)OP(=O)(O)OCC2OC(N1C(=O)N=C(N)C=C1)CC2O"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "NC1=NC(=O)N(C=C1)[C@H]2C[C@H](O)[C@@H](CO[P@](O)(=O)O[P@](O)(=O)O[P](O)(O)=O)O2"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "NC1=NC(=O)N(C=C1)[CH]2C[CH](O)[CH](CO[P](O)(=O)O[P](O)(=O)O[P](O)(O)=O)O2"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1[C@@H]([C@H](O[C@H]1N2C=CC(=NC2=O)N)CO[P@@](=O)(O)O[P@@](=O)(O)OP(=O)(O)O)O"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1C(C(OC1N2C=CC(=NC2=O)N)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C9H16N3O13P3/c10-7-1-2-12(9(14)11-7)8-3-5(13)6(23-8)4-22-27(18,19)25-28(20,21)24-26(15,16)17/h1-2,5-6,8,13H,3-4H2,(H,18,19)(H,20,21)(H2,10,11,14)(H2,15,16,17)/t5-,6+,8+/m0/s1"
+      },
+      {
+        "comp_id": "DCP",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "RGWHQCVHVJXOKC-SHYZEUOFSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 44,
+  "bond_count": 45,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

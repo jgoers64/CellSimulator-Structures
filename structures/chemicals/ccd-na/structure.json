@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-na",
+  "name": "Sodium ion",
+  "aliases": [
+    "Sodium (Na+)"
+  ],
+  "coordinate_type": "idealized_chemical_component",
+  "coordinate_units": "angstrom",
+  "units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "source": "wwPDB CCD NA, computed ideal coordinates",
+  "source_url": "https://www.rcsb.org/ligand/NA",
+  "source_sha256": "325116dae44c0d864aec19f5a44e1236ef309cc2b54e564d8189ee4c024a20ea",
+  "formal_charge": 1,
+  "total_charge": 1.0,
+  "charge_note": "Exact CCD formal charge; no partial charges or force-field parameters assigned.",
+  "formula": "Na",
+  "notes": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "atoms": [
+    {
+      "element": "Na",
+      "atom_name": "NA",
+      "formal_charge": 1,
+      "stereochemistry": "N",
+      "aromatic": false,
+      "ccd_leaving_atom": false
+    }
+  ],
+  "coords": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "bonds": [],
+  "bond_orders": [],
+  "bond_details": []
+}

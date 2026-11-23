@@ -1,0 +1,10 @@
+# Stable bytes are required for source and converted-coordinate SHA-256 pins,
+# including Windows checkouts with core.autocrlf enabled.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.gz -text
+# Empty trailing TSV columns and source CIF spacing are meaningful source bytes.
+*.tsv -text whitespace=-blank-at-eol
+*.cif -text whitespace=-blank-at-eol

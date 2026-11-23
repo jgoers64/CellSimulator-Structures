@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-thr",
+  "name": "L-Threonine, CCD free-component state",
+  "inventory_name": "Free proteinogenic amino acids",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "THR",
+    "url": "https://files.rcsb.org/ligands/download/THR.cif",
+    "entry_url": "https://www.rcsb.org/ligand/THR",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-thr/source.cif",
+    "sha256": "feb75dfac5bfcc7045de7a75a31575f3bf3e5b411716a06e92712924759dd554",
+    "retrieved_at_utc": "2026-11-23T03:57:37.918603+00:00",
+    "ccd_modified_date": "2023-11-03",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "THREONINE",
+    "formula": "C4 H9 N O3",
+    "formal_charge": 0,
+    "component_type": "L-PEPTIDE LINKING",
+    "descriptors": [
+      {
+        "comp_id": "THR",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C(N)C(O)C"
+      },
+      {
+        "comp_id": "THR",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "C[C@@H](O)[C@H](N)C(O)=O"
+      },
+      {
+        "comp_id": "THR",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "C[CH](O)[CH](N)C(O)=O"
+      },
+      {
+        "comp_id": "THR",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C[C@H]([C@@H](C(=O)O)N)O"
+      },
+      {
+        "comp_id": "THR",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "CC(C(C(=O)O)N)O"
+      },
+      {
+        "comp_id": "THR",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C4H9NO3/c1-2(6)3(5)4(7)8/h2-3,6H,5H2,1H3,(H,7,8)/t2-,3+/m1/s1"
+      },
+      {
+        "comp_id": "THR",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "AYFVYJQAPQTCCC-GBXIJSLDSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 17,
+  "bond_count": 16,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-pro",
+  "name": "L-Proline, CCD free-component state",
+  "inventory_name": "Free proteinogenic amino acids",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "PRO",
+    "url": "https://files.rcsb.org/ligands/download/PRO.cif",
+    "entry_url": "https://www.rcsb.org/ligand/PRO",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-pro/source.cif",
+    "sha256": "08674e4d60bc40ad5702b8de6e5e4abb66c2bbb603832c021c31194f4b4e593c",
+    "retrieved_at_utc": "2026-11-23T03:57:37.915578+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "PROLINE",
+    "formula": "C5 H9 N O2",
+    "formal_charge": 0,
+    "component_type": "L-PEPTIDE LINKING",
+    "descriptors": [
+      {
+        "comp_id": "PRO",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C1NCCC1"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "OC(=O)[C@@H]1CCCN1"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "OC(=O)[CH]1CCCN1"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1C[C@H](NC1)C(=O)O"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C1CC(NC1)C(=O)O"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C5H9NO2/c7-5(8)4-2-1-3-6-4/h4,6H,1-3H2,(H,7,8)/t4-/m0/s1"
+      },
+      {
+        "comp_id": "PRO",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "ONIBWKKTOPOVIA-BYPYZUCNSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 17,
+  "bond_count": 17,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

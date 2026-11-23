@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-his",
+  "name": "L-Histidine, CCD free-component state",
+  "inventory_name": "Free proteinogenic amino acids",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "HIS",
+    "url": "https://files.rcsb.org/ligands/download/HIS.cif",
+    "entry_url": "https://www.rcsb.org/ligand/HIS",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-his/source.cif",
+    "sha256": "89355e09d9c622dd514738e559d7a75ab0a1659df9a179978e88e1a44704a46f",
+    "retrieved_at_utc": "2026-11-23T03:57:37.905837+00:00",
+    "ccd_modified_date": "2023-11-03",
+    "ideal_coordinate_generator": "OpenEye/OEToolkits V1.4.2"
+  },
+  "chemical_identity": {
+    "ccd_name": "HISTIDINE",
+    "formula": "C6 H10 N3 O2",
+    "formal_charge": 1,
+    "component_type": "L-PEPTIDE LINKING",
+    "descriptors": [
+      {
+        "comp_id": "HIS",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=C(O)C(N)Cc1cnc[nH+]1"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "N[C@@H](Cc1c[nH]c[nH+]1)C(O)=O"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "N[CH](Cc1c[nH]c[nH+]1)C(O)=O"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "c1c([nH+]c[nH]1)C[C@@H](C(=O)O)N"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "c1c([nH+]c[nH]1)CC(C(=O)O)N"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C6H9N3O2/c7-5(6(10)11)1-4-2-8-3-9-4/h2-3,5H,1,7H2,(H,8,9)(H,10,11)/p+1/t5-/m0/s1"
+      },
+      {
+        "comp_id": "HIS",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "HNDVDQJCIGZPNO-YFKPBYRVSA-O"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 21,
+  "bond_count": 21,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

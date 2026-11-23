@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-put",
+  "name": "Putrescine, CCD unprotonated state",
+  "inventory_name": "Putrescine",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "PUT",
+    "url": "https://files.rcsb.org/ligands/download/PUT.cif",
+    "entry_url": "https://www.rcsb.org/ligand/PUT",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-put/source.cif",
+    "sha256": "19d6f8a42afef103d87d9d6d7facc0938a116739262cfab2131a5be18efed46d",
+    "retrieved_at_utc": "2026-11-23T03:57:37.872961+00:00",
+    "ccd_modified_date": "2021-03-01",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "1,4-DIAMINOBUTANE",
+    "formula": "C4 H12 N2",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "PUT",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "NCCCCN"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "NCCCCN"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "NCCCCN"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C(CCN)CN"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "C(CCN)CN"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C4H12N2/c5-3-1-2-4-6/h1-6H2"
+      },
+      {
+        "comp_id": "PUT",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "KIDHWZJUCRJVML-UHFFFAOYSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 18,
+  "bond_count": 17,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

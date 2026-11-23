@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-asn",
+  "name": "L-Asparagine, CCD free-component state",
+  "inventory_name": "Free proteinogenic amino acids",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "ASN",
+    "url": "https://files.rcsb.org/ligands/download/ASN.cif",
+    "entry_url": "https://www.rcsb.org/ligand/ASN",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-asn/source.cif",
+    "sha256": "81491bbdb49f96e2945192c07510324d206298d3479029b76defba2ed6ab2dc7",
+    "retrieved_at_utc": "2026-11-23T03:57:37.896933+00:00",
+    "ccd_modified_date": "2024-09-27",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "ASPARAGINE",
+    "formula": "C4 H8 N2 O3",
+    "formal_charge": 0,
+    "component_type": "L-PEPTIDE LINKING",
+    "descriptors": [
+      {
+        "comp_id": "ASN",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "12.01",
+        "descriptor": "O=C(N)CC(N)C(=O)O"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/C4H8N2O3/c5-2(4(8)9)1-3(6)7/h2H,1,5H2,(H2,6,7)(H,8,9)/t2-/m0/s1"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "DCXYFEDJOCDNAF-REOHCLBHSA-N"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "N[C@@H](CC(N)=O)C(O)=O"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.370",
+        "descriptor": "N[CH](CC(N)=O)C(O)=O"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.2",
+        "descriptor": "C([C@@H](C(=O)O)N)C(=O)N"
+      },
+      {
+        "comp_id": "ASN",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.7.2",
+        "descriptor": "C(C(C(=O)O)N)C(=O)N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 17,
+  "bond_count": 16,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied. The full CCD component includes its terminal/leaving atoms; this asset is a free-component representative, not a peptide residue. This expands the family to the 20 canonical amino acids only.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

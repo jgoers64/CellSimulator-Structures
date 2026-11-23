@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-ppv",
+  "name": "Pyrophosphoric acid, neutral representative",
+  "inventory_name": "Pyrophosphate",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "PPV",
+    "url": "https://files.rcsb.org/ligands/download/PPV.cif",
+    "entry_url": "https://www.rcsb.org/ligand/PPV",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-ppv/source.cif",
+    "sha256": "5509876f054fefc958902c8fcbd718cb82e66297c7e7aa769ffbd82f1fee0480",
+    "retrieved_at_utc": "2026-11-23T03:57:37.886014+00:00",
+    "ccd_modified_date": "2011-06-04",
+    "ideal_coordinate_generator": "?"
+  },
+  "chemical_identity": {
+    "ccd_name": "PYROPHOSPHATE",
+    "formula": "H4 O7 P2",
+    "formal_charge": 0,
+    "component_type": "NON-POLYMER",
+    "descriptors": [
+      {
+        "comp_id": "PPV",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "10.04",
+        "descriptor": "O=P(O)(O)OP(=O)(O)O"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[P](O)(=O)O[P](O)(O)=O"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.341",
+        "descriptor": "O[P](O)(=O)O[P](O)(O)=O"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "OP(=O)(O)OP(=O)(O)O"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "1.5.0",
+        "descriptor": "OP(=O)(O)OP(=O)(O)O"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "InChI=1S/H4O7P2/c1-8(2,3)7-9(4,5)6/h(H2,1,2,3)(H2,4,5,6)"
+      },
+      {
+        "comp_id": "PPV",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.03",
+        "descriptor": "XPPKVPWEQAFLFU-UHFFFAOYSA-N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 13,
+  "bond_count": 12,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}

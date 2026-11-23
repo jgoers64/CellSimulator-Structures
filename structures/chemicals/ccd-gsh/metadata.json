@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "chemical-ccd-gsh",
+  "name": "Reduced glutathione, CCD neutral acid state",
+  "inventory_name": "Reduced glutathione (GSH)",
+  "source_kind": "wwpdb_ccd",
+  "provenance_class": "idealized_chemical_component",
+  "source": {
+    "database": "wwPDB Chemical Component Dictionary",
+    "ccd_id": "GSH",
+    "url": "https://files.rcsb.org/ligands/download/GSH.cif",
+    "entry_url": "https://www.rcsb.org/ligand/GSH",
+    "documentation_url": "https://www.wwpdb.org/data/ccd",
+    "source_path": "structures/chemicals/ccd-gsh/source.cif",
+    "sha256": "963f3449d2cea32474908415f666e05e0943aa3712ef56a1417e4a6d94b926f1",
+    "retrieved_at_utc": "2026-11-23T03:57:37.863992+00:00",
+    "ccd_modified_date": "2026-03-06",
+    "ideal_coordinate_generator": "Corina"
+  },
+  "chemical_identity": {
+    "ccd_name": "Glutathione",
+    "formula": "C10 H17 N3 O6 S",
+    "formal_charge": 0,
+    "component_type": "peptide-like",
+    "descriptors": [
+      {
+        "comp_id": "GSH",
+        "type": "SMILES",
+        "program": "ACDLabs",
+        "program_version": "14.52",
+        "descriptor": "O=C(NCC(=O)O)C(NC(=O)CCC(N)C(=O)O)CS"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "InChI",
+        "program": "InChI",
+        "program_version": "1.06",
+        "descriptor": "InChI=1S/C10H17N3O6S/c11-5(10(18)19)1-2-7(14)13-6(4-20)9(17)12-3-8(15)16/h5-6,20H,1-4,11H2,(H,12,17)(H,13,14)(H,15,16)(H,18,19)/t5-,6-/m0/s1"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "InChIKey",
+        "program": "InChI",
+        "program_version": "1.06",
+        "descriptor": "RWSXRVCMGQZWBV-WDSKDSINSA-N"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "SMILES_CANONICAL",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "N[C@@H](CCC(=O)N[C@@H](CS)C(=O)NCC(O)=O)C(O)=O"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "SMILES",
+        "program": "CACTVS",
+        "program_version": "3.385",
+        "descriptor": "N[CH](CCC(=O)N[CH](CS)C(=O)NCC(O)=O)C(O)=O"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "SMILES_CANONICAL",
+        "program": "OpenEye OEToolkits",
+        "program_version": "3.1.0.0",
+        "descriptor": "C(CC(=O)N[C@@H](CS)C(=O)NCC(=O)O)[C@@H](C(=O)O)N"
+      },
+      {
+        "comp_id": "GSH",
+        "type": "SMILES",
+        "program": "OpenEye OEToolkits",
+        "program_version": "3.1.0.0",
+        "descriptor": "C(CC(=O)NC(CS)C(=O)NCC(=O)O)C(C(=O)O)N"
+      }
+    ]
+  },
+  "coordinate_selection": "all CCD ideal-coordinate atoms, including dictionary hydrogens and leaving atoms",
+  "coordinate_units": "angstrom",
+  "view_only": true,
+  "simulation_ready": false,
+  "atom_count": 37,
+  "bond_count": 36,
+  "chemical_state_note": "This exact CCD formula, formal charge and stereochemistry define a representative chemical state. It is not a selected physiological protonation state or a measurement of nuclear abundance. Bound ions, Mg-nucleotide complexes, hydration shells and binding-induced conformations are not supplied.",
+  "review_status": "dictionary_identity_and_import_fidelity_checked",
+  "scientific_validation": "No experimental nuclear pose or solution-state conformer validation; ideal coordinates are computational.",
+  "copies_per_default_g1_nucleus": null,
+  "abundance_rank_default_g1": null
+}
