@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "id": "pdb-4dqy",
+  "name": "Human PARP1 activation domains bound to a DNA break",
+  "provenance_class": "experimental_coordinate_model",
+  "coordinate_status": "pinned_source_available",
+  "source": {
+    "database": "wwPDB / RCSB PDB",
+    "pdb_id": "4DQY",
+    "entry_url": "https://www.rcsb.org/structure/4DQY",
+    "coordinate_url": "https://files.rcsb.org/download/4DQY.cif.gz",
+    "coordinate_format": "PDBx/mmCIF",
+    "coordinate_sha256": "474abcaaec1d6cd6978d5bf6c793ee655cc4c4a7fac761d1d180da759028b998",
+    "checksum_scope": "uncompressed original mmCIF bytes",
+    "coordinate_bytes": 2405400,
+    "coordinate_units": "angstrom",
+    "retrieved_at_utc": "2026-11-23T03:59:48+00:00",
+    "entry_version": {
+      "deposit_date": "2012-02-16T00:00:00.000+00:00",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2012-05-30T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 1,
+      "revision_date": "2024-02-28T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "primary_citation": {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "Science",
+      "journal_id_ASTM": "SCIEAS",
+      "journal_id_CSD": "0038",
+      "journal_id_ISSN": "0036-8075",
+      "journal_volume": "336",
+      "page_first": "728",
+      "page_last": "732",
+      "pdbx_database_id_DOI": "10.1126/science.1216338",
+      "pdbx_database_id_PubMed": 22582261,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Langelier, M.F.",
+        "Planck, J.L.",
+        "Roy, S.",
+        "Pascal, J.M."
+      ],
+      "rcsb_journal_abbrev": "Science",
+      "title": "Structural basis for DNA damage-dependent poly(ADP-ribosyl)ation by human PARP-1.",
+      "year": 2012
+    },
+    "metadata_url": "https://data.rcsb.org/rest/v1/core/entry/4DQY",
+    "metadata_sha256": "659cd0f554a72076703881ac5d988af328e9606a043d3d9a24f7c0483f8662e3"
+  },
+  "assembly": {
+    "id": "1",
+    "description": "Zn1, Zn3 and WGR–CAT domain constructs assembled on a DNA break; assembly 2 is another deposited assembly choice.",
+    "author_determined": true,
+    "software_determined": false,
+    "oligomeric_details": "pentameric",
+    "atom_count_upper_bound": 6407,
+    "coordinate_scope": "Original asymmetric unit plus explicitly selected archive assembly operators"
+  },
+  "entities": {
+    "descriptions": [
+      {
+        "id": "1",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Poly [ADP-ribose] polymerase 1",
+        "formula_weight": "13101.821",
+        "pdbx_number_of_molecules": "2",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": "Zinc Finger 1 (Zn1)",
+        "details": null
+      },
+      {
+        "id": "2",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Poly [ADP-ribose] polymerase 1",
+        "formula_weight": "18393.297",
+        "pdbx_number_of_molecules": "2",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": "Zinc Finger 3 (Zn3)",
+        "details": null
+      },
+      {
+        "id": "3",
+        "type": "polymer",
+        "src_method": "man",
+        "pdbx_description": "Poly [ADP-ribose] polymerase 1",
+        "formula_weight": "57138.160",
+        "pdbx_number_of_molecules": "2",
+        "pdbx_ec": "2.4.2.30",
+        "pdbx_mutation": null,
+        "pdbx_fragment": "WGR-CAT fragment",
+        "details": null
+      },
+      {
+        "id": "4",
+        "type": "polymer",
+        "src_method": "syn",
+        "pdbx_description": "DNA (26-MER)",
+        "formula_weight": "7990.130",
+        "pdbx_number_of_molecules": "2",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      },
+      {
+        "id": "5",
+        "type": "non-polymer",
+        "src_method": "syn",
+        "pdbx_description": "ZINC ION",
+        "formula_weight": "65.409",
+        "pdbx_number_of_molecules": "4",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      },
+      {
+        "id": "6",
+        "type": "non-polymer",
+        "src_method": "syn",
+        "pdbx_description": "1,2-ETHANEDIOL",
+        "formula_weight": "62.068",
+        "pdbx_number_of_molecules": "1",
+        "pdbx_ec": null,
+        "pdbx_mutation": null,
+        "pdbx_fragment": null,
+        "details": null
+      }
+    ],
+    "polymers": [
+      {
+        "entity_id": "1",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "MGSSHHHHHHSSGLVPRGSHMAESSDKLYRVEYAKSGRASCKKCSESIPKDSLRMAIMVQSPMFDGKVPHWYHFSCFWKV\nGHSIRHPDVEVDGFSELRWDDQQKVKKTAEAGGVTG",
+        "pdbx_seq_one_letter_code_can": "MGSSHHHHHHSSGLVPRGSHMAESSDKLYRVEYAKSGRASCKKCSESIPKDSLRMAIMVQSPMFDGKVPHWYHFSCFWKV\nGHSIRHPDVEVDGFSELRWDDQQKVKKTAEAGGVTG",
+        "pdbx_strand_id": "A,D",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "2",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "MVDEVAKKKSKKEKDKDSKLEKALKAQNDLIWNIKDELKKVCSTNDLKELLIFNKQQVPSGESAILDRVADGMVFGALLP\nCEECSGQLVFKSDAYYCTGDVTAWTKCMVKTQTPNRKEWVTPKEFREISYLKKLKVKKQDRIFPPETSASVALEHHHHHH",
+        "pdbx_seq_one_letter_code_can": "MVDEVAKKKSKKEKDKDSKLEKALKAQNDLIWNIKDELKKVCSTNDLKELLIFNKQQVPSGESAILDRVADGMVFGALLP\nCEECSGQLVFKSDAYYCTGDVTAWTKCMVKTQTPNRKEWVTPKEFREISYLKKLKVKKQDRIFPPETSASVALEHHHHHH",
+        "pdbx_strand_id": "B,E",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "3",
+        "type": "polypeptide(L)",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "MKSEKRMKLTLKGGAAVDPDSGLEHSAHVLEKGGKVFSATLGLVDIVKGTNSYYKLQLLEDDKENRYWIFRSWGRVGTVI\nGSNKLEQMPSKEDAIEHFMKLYEEKTGNAWHSKNFTKYPKKFYPLEIDYGQDEEAVKKLTVNPGTKSKLPKPVQDLIKMI\nFDVESMKKAMVEYEIDLQKMPLGKLSKRQIQAAYSILSEVQQAVSQGSSDSQILDLSNRFYTLIPHDFGMKKPPLLNNAD\nSVQAKAEMLDNLLDIEVAYSLLRGGSDDSSKDPIDVNYEKLKTDIKVVDRDSEEAEIIRKYVKNTHATTHNAYDLEVIDI\nFKIEREGECQRYKPFKQLHNRRLLWHGSRTTNFAGILSQGLRIAPPEAPVTGYMFGKGIYFADMVSKSANYCHTSQGDPI\nGLILLGEVALGNMYELKHASHISKLPKGKHSVKGLGKTTPDPSANISLDGVDVPLGTGISSGVNDTSLLYNEYIVYDIAQ\nVNLKYLLKLKFNFKTSLWLEHHHHHH",
+        "pdbx_seq_one_letter_code_can": "MKSEKRMKLTLKGGAAVDPDSGLEHSAHVLEKGGKVFSATLGLVDIVKGTNSYYKLQLLEDDKENRYWIFRSWGRVGTVI\nGSNKLEQMPSKEDAIEHFMKLYEEKTGNAWHSKNFTKYPKKFYPLEIDYGQDEEAVKKLTVNPGTKSKLPKPVQDLIKMI\nFDVESMKKAMVEYEIDLQKMPLGKLSKRQIQAAYSILSEVQQAVSQGSSDSQILDLSNRFYTLIPHDFGMKKPPLLNNAD\nSVQAKAEMLDNLLDIEVAYSLLRGGSDDSSKDPIDVNYEKLKTDIKVVDRDSEEAEIIRKYVKNTHATTHNAYDLEVIDI\nFKIEREGECQRYKPFKQLHNRRLLWHGSRTTNFAGILSQGLRIAPPEAPVTGYMFGKGIYFADMVSKSANYCHTSQGDPI\nGLILLGEVALGNMYELKHASHISKLPKGKHSVKGLGKTTPDPSANISLDGVDVPLGTGISSGVNDTSLLYNEYIVYDIAQ\nVNLKYLLKLKFNFKTSLWLEHHHHHH",
+        "pdbx_strand_id": "C,F",
+        "pdbx_target_identifier": null
+      },
+      {
+        "entity_id": "4",
+        "type": "polydeoxyribonucleotide",
+        "nstd_linkage": "no",
+        "nstd_monomer": "no",
+        "pdbx_seq_one_letter_code": "(DG)(DC)(DC)(DT)(DA)(DC)(DC)(DG)(DG)(DT)(DT)(DC)(DG)(DC)(DG)(DA)(DA)(DC)(DC)(DG)\n(DG)(DT)(DA)(DG)(DG)(DC)",
+        "pdbx_seq_one_letter_code_can": "GCCTACCGGTTCGCGAACCGGTAGGC",
+        "pdbx_strand_id": "M,N",
+        "pdbx_target_identifier": null
+      }
+    ],
+    "genetically_engineered_source": [
+      {
+        "entity_id": "1",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": null,
+        "pdbx_beg_seq_num": null,
+        "pdbx_end_seq_num": null,
+        "gene_src_common_name": "human",
+        "gene_src_genus": null,
+        "pdbx_gene_src_gene": null,
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": null,
+        "pdbx_host_org_scientific_name": "Escherichia coli",
+        "pdbx_host_org_ncbi_taxonomy_id": "562",
+        "host_org_genus": null,
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": null,
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": null,
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": null,
+        "plasmid_details": null,
+        "pdbx_description": null
+      },
+      {
+        "entity_id": "2",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": null,
+        "pdbx_beg_seq_num": null,
+        "pdbx_end_seq_num": null,
+        "gene_src_common_name": "human",
+        "gene_src_genus": null,
+        "pdbx_gene_src_gene": null,
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": null,
+        "pdbx_host_org_scientific_name": "Escherichia coli",
+        "pdbx_host_org_ncbi_taxonomy_id": "562",
+        "host_org_genus": null,
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": null,
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": null,
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": null,
+        "plasmid_details": null,
+        "pdbx_description": null
+      },
+      {
+        "entity_id": "3",
+        "pdbx_src_id": "1",
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_seq_type": null,
+        "pdbx_beg_seq_num": null,
+        "pdbx_end_seq_num": null,
+        "gene_src_common_name": "human",
+        "gene_src_genus": null,
+        "pdbx_gene_src_gene": "PARP1, ADPRT, PPOL",
+        "gene_src_species": null,
+        "gene_src_strain": null,
+        "gene_src_tissue": null,
+        "gene_src_tissue_fraction": null,
+        "gene_src_details": null,
+        "pdbx_gene_src_fragment": null,
+        "pdbx_gene_src_scientific_name": "Homo sapiens",
+        "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+        "pdbx_gene_src_variant": null,
+        "pdbx_gene_src_cell_line": null,
+        "pdbx_gene_src_atcc": null,
+        "pdbx_gene_src_organ": null,
+        "pdbx_gene_src_organelle": null,
+        "pdbx_gene_src_cell": null,
+        "pdbx_gene_src_cellular_location": null,
+        "host_org_common_name": null,
+        "pdbx_host_org_scientific_name": "Escherichia coli",
+        "pdbx_host_org_ncbi_taxonomy_id": "562",
+        "host_org_genus": null,
+        "pdbx_host_org_gene": null,
+        "pdbx_host_org_organ": null,
+        "host_org_species": null,
+        "pdbx_host_org_tissue": null,
+        "pdbx_host_org_tissue_fraction": null,
+        "pdbx_host_org_strain": null,
+        "pdbx_host_org_variant": null,
+        "pdbx_host_org_cell_line": null,
+        "pdbx_host_org_atcc": null,
+        "pdbx_host_org_culture_collection": null,
+        "pdbx_host_org_cell": null,
+        "pdbx_host_org_organelle": null,
+        "pdbx_host_org_cellular_location": null,
+        "pdbx_host_org_vector_type": null,
+        "pdbx_host_org_vector": null,
+        "host_org_details": null,
+        "expression_system_id": null,
+        "plasmid_name": null,
+        "plasmid_details": null,
+        "pdbx_description": null
+      }
+    ],
+    "natural_source": [],
+    "synthetic_source": [],
+    "sequence_references": [
+      {
+        "id": "1",
+        "db_name": "UNP",
+        "db_code": "PARP1_HUMAN",
+        "pdbx_db_accession": "P09874",
+        "entity_id": "1",
+        "pdbx_seq_one_letter_code": "MAESSDKLYRVEYAKSGRASCKKCSESIPKDSLRMAIMVQSPMFDGKVPHWYHFSCFWKVGHSIRHPDVEVDGFSELRWD\nDQQKVKKTAEAGGVTG",
+        "pdbx_align_begin": "1",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "2",
+        "db_name": "UNP",
+        "db_code": "PARP1_HUMAN",
+        "pdbx_db_accession": "P09874",
+        "entity_id": "2",
+        "pdbx_seq_one_letter_code": "VDEVAKKKSKKEKDKDSKLEKALKAQNDLIWNIKDELKKVCSTNDLKELLIFNKQQVPSGESAILDRVADGMVFGALLPC\nEECSGQLVFKSDAYYCTGDVTAWTKCMVKTQTPNRKEWVTPKEFREISYLKKLKVKKQDRIFPPETSASVA",
+        "pdbx_align_begin": "216",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "3",
+        "db_name": "UNP",
+        "db_code": "PARP1_HUMAN",
+        "pdbx_db_accession": "P09874",
+        "entity_id": "3",
+        "pdbx_seq_one_letter_code": "KSEKRMKLTLKGGAAVDPDSGLEHSAHVLEKGGKVFSATLGLVDIVKGTNSYYKLQLLEDDKENRYWIFRSWGRVGTVIG\nSNKLEQMPSKEDAIEHFMKLYEEKTGNAWHSKNFTKYPKKFYPLEIDYGQDEEAVKKLTVNPGTKSKLPKPVQDLIKMIF\nDVESMKKAMVEYEIDLQKMPLGKLSKRQIQAAYSILSEVQQAVSQGSSDSQILDLSNRFYTLIPHDFGMKKPPLLNNADS\nVQAKVEMLDNLLDIEVAYSLLRGGSDDSSKDPIDVNYEKLKTDIKVVDRDSEEAEIIRKYVKNTHATTHNAYDLEVIDIF\nKIEREGECQRYKPFKQLHNRRLLWHGSRTTNFAGILSQGLRIAPPEAPVTGYMFGKGIYFADMVSKSANYCHTSQGDPIG\nLILLGEVALGNMYELKHASHISKLPKGKHSVKGLGKTTPDPSANISLDGVDVPLGTGISSGVNDTSLLYNEYIVYDIAQV\nNLKYLLKLKFNFKTSLW",
+        "pdbx_align_begin": "518",
+        "pdbx_db_isoform": null
+      },
+      {
+        "id": "4",
+        "db_name": "PDB",
+        "db_code": "4DQY",
+        "pdbx_db_accession": "4DQY",
+        "entity_id": "4",
+        "pdbx_seq_one_letter_code": null,
+        "pdbx_align_begin": null,
+        "pdbx_db_isoform": null
+      }
+    ]
+  },
+  "coverage": {
+    "deposited_atom_count": 11750,
+    "modeled_polymer_residues": 1408,
+    "deposited_polymer_residues": 1616,
+    "unmodeled_polymer_residues": 208,
+    "deposited_hydrogen_count": 0,
+    "unobserved_residue_record_count": 208,
+    "unobserved_atom_record_count": 134,
+    "full_records_path": "structures/nuclear/pdb-4dqy/coverage.json.gz",
+    "full_records_sha256": "83ed07a0af7a8f7e75a37def03828b9023ca29b193322ae1ccb4a34de9c72962",
+    "note": "Counts describe deposited constructs; they do not establish full canonical-sequence coverage or nuclear abundance."
+  },
+  "quality": {
+    "methods": [
+      {
+        "crystals_number": 1,
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "resolution_angstrom": [
+      3.25
+    ],
+    "refinement": [
+      {
+        "B_iso_mean": 152.939,
+        "aniso_B_1_1": 3.14,
+        "aniso_B_1_2": -0.0,
+        "aniso_B_1_3": -0.0,
+        "aniso_B_2_2": 4.57,
+        "aniso_B_2_3": 0.0,
+        "aniso_B_3_3": -7.71,
+        "correlation_coeff_Fo_to_Fc": 0.943,
+        "correlation_coeff_Fo_to_Fc_free": 0.904,
+        "details": "HYDROGENS HAVE BEEN ADDED IN THE RIDING POSITIONS",
+        "ls_R_factor_R_free": 0.30414,
+        "ls_R_factor_R_work": 0.2384,
+        "ls_R_factor_obs": 0.24156,
+        "ls_d_res_high": 3.25,
+        "ls_d_res_low": 20.0,
+        "ls_number_reflns_R_free": 1684,
+        "ls_number_reflns_obs": 31628,
+        "ls_percent_reflns_R_free": 5.1,
+        "ls_percent_reflns_obs": 94.42,
+        "overall_SU_B": 79.761,
+        "overall_SU_ML": 0.574,
+        "pdbx_R_Free_selection_details": "RANDOM",
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_ls_cross_valid_method": "THROUGHOUT",
+        "pdbx_method_to_determine_struct": "MOLECULAR REPLACEMENT",
+        "pdbx_overall_ESU_R_Free": 0.625,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "pdbx_solvent_ion_probe_radii": 0.8,
+        "pdbx_solvent_shrinkage_radii": 0.8,
+        "pdbx_solvent_vdw_probe_radii": 1.2,
+        "pdbx_stereochemistry_target_values": "MAXIMUM LIKELIHOOD",
+        "solvent_model_details": "MASK"
+      }
+    ],
+    "archive_validation_summary": {
+      "pdbx_vrpt_summary": {
+        "attempted_validation_steps": "molprobity,validation-pack,xtriage,eds,mogul,validation_schema,percentiles,writexml,writecif,writepdf",
+        "ligands_for_buster_report": "N",
+        "report_creation_date": "2026-03-13T22:31:00.000+00:00"
+      },
+      "pdbx_vrpt_summary_diffraction": [
+        {
+          "B_factor_type": "FULL",
+          "CCP4_version": "9.0.010 (Gargrove)",
+          "DCC_R": 0.2392,
+          "DCC_Rfree": 0.3044,
+          "EDS_R": 0.2405,
+          "EDS_res_high": 3.25,
+          "EDS_res_low": 20.0,
+          "Fo_Fc_correlation": 0.943,
+          "I_over_sigma": "2.28(3.24A)",
+          "Padilla_Yeates_L2_mean": 0.288,
+          "Padilla_Yeates_L_mean": 0.458,
+          "Wilson_B_aniso": "[132.688,139.271,87.891,0.000,0.000,0.000]",
+          "Wilson_B_estimate": 114.441,
+          "acentric_outliers": 1,
+          "bulk_solvent_b": 95.67,
+          "bulk_solvent_k": 0.245,
+          "centric_outliers": 1,
+          "data_anisotropy": 0.428,
+          "data_completeness": 94.31,
+          "density_fitness_version": "1.0.12",
+          "exp_method": "x-ray",
+          "num_miller_indices": 33513,
+          "number_reflns_R_free": 1691,
+          "percent_RSRZ_outliers": 0.07,
+          "percent_free_reflections": 4.74,
+          "trans_NCS_details": "The largest off-origin peak in the Patterson function is 12.95% of the height of the origin peak. No significant pseudotranslation is detected."
+        }
+      ],
+      "pdbx_vrpt_summary_geometry": [
+        {
+          "angles_RMSZ": 0.72,
+          "bonds_RMSZ": 0.59,
+          "clashscore": 13.1,
+          "num_H_reduce": 11228,
+          "num_angles_RMSZ": 16542,
+          "num_bonds_RMSZ": 12098,
+          "percent_ramachandran_outliers": 0.3,
+          "percent_rotamer_outliers": 6.13
+        }
+      ]
+    },
+    "full_validation_report_url": "https://files.rcsb.org/pub/pdb/validation_reports/dq/4dqy/4dqy_full_validation.pdf",
+    "full_report_review_status": "not_reviewed",
+    "local_density_or_map_review_status": "not_reviewed",
+    "scientific_accuracy_percent": null
+  },
+  "review": {
+    "status": "identity_and_source_metadata_reviewed_with_limitations",
+    "scope": "Pinned archive identity, assembly presence, source checksum, coverage and summary metrics; no independent experimental re-refinement or local-map review."
+  },
+  "nuclear_context": {
+    "copies_per_default_g1_nucleus": null,
+    "placement": "not_assigned",
+    "evidence_note": "A structure entry establishes a model, not its quantity or position in the default cell."
+  },
+  "rendering": {
+    "view_only": true,
+    "simulation_ready": false,
+    "automatic_atom_budget": 250000,
+    "large_assembly_requires_chunking": false
+  },
+  "limitations": [
+    "This is not a complete full-length PARP1 structure.",
+    "Three separate experimental domain chains represent parts of one physiological protein; the PDB heteromer label is not a nuclear population count.",
+    "Missing domains/linkers must not be silently connected by invented atomic coordinates.",
+    "The DNA-bound activation conformation is a particular biochemical state."
+  ],
+  "research_reference": {
+    "pdb_id": "4DQY",
+    "name": "Human PARP1 activation domains bound to a DNA break",
+    "suggested_component": "chromatin.dna_repair.parp1",
+    "import_priority": "second_wave_small_asset",
+    "organism": {
+      "protein_source": "Homo sapiens",
+      "taxonomy_id": 9606,
+      "nucleic_acid_source": "Experimental 26-mer DNA construct",
+      "expression_system": "Escherichia coli"
+    },
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 3.25,
+    "assembly": {
+      "preferred_id": "1",
+      "description": "Zn1, Zn3 and WGR–CAT domain constructs assembled on a DNA break; assembly 2 is another deposited assembly choice.",
+      "structural_scope": "Domain-based reconstruction of a monomeric PARP1 activation arrangement"
+    },
+    "coverage": {
+      "entry_atom_count": 11750,
+      "entry_modeled_residue_count": 1408,
+      "entry_deposited_residue_count": 1616,
+      "scope_note": "Entry contains multiple construct copies. Pin one biological assembly and do not equate three construct chains with three physiological PARP1 molecules."
+    },
+    "provenance_class": "experimental_coordinate_model",
+    "suggested_representations": [
+      "resolved-domain surface",
+      "domain cartoons with source chain labels",
+      "deposited atoms"
+    ],
+    "limitations": [
+      "This is not a complete full-length PARP1 structure.",
+      "Three separate experimental domain chains represent parts of one physiological protein; the PDB heteromer label is not a nuclear population count.",
+      "Missing domains/linkers must not be silently connected by invented atomic coordinates.",
+      "The DNA-bound activation conformation is a particular biochemical state."
+    ],
+    "sources": [
+      {
+        "kind": "PDB primary archive",
+        "url": "https://www.rcsb.org/structure/4DQY"
+      },
+      {
+        "kind": "Primary paper",
+        "url": "https://doi.org/10.1126/science.1216338"
+      }
+    ]
+  }
+}

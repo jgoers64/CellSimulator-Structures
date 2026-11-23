@@ -205,7 +205,7 @@ def write_json(path, data, record_key=None):
         )
         text = prefix[:-1].rstrip() + ",\n  " + json.dumps(record_key) + ": [\n" + records + "\n  ]\n}\n"
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(text, encoding="utf-8")
+    temp.write_bytes(text.encode("utf-8"))
     temp.replace(path)
 
 

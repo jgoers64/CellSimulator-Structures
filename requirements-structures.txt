@@ -1,0 +1,3 @@
+# Only needed when converting macromolecular mmCIF coordinates.
+# Catalog searches and bundled chemical assets use the Python standard library.
+gemmi==0.7.5

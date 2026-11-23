@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "collection_id": "human-nucleus",
+  "raw_coordinate_policy": "Original mmCIF fetched lazily into ignored cache; pinned checksum checked before every conversion.",
+  "assets": [
+    {
+      "id": "pdb-2cv5",
+      "name": "Human nucleosome core particle (existing BioSim reference)",
+      "metadata_path": "structures/nuclear/pdb-2cv5/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 12471
+    },
+    {
+      "id": "pdb-3afa",
+      "name": "Canonical human H3.1 nucleosome core particle",
+      "metadata_path": "structures/nuclear/pdb-3afa/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 12198
+    },
+    {
+      "id": "pdb-1vym",
+      "name": "Human PCNA sliding-clamp trimer",
+      "metadata_path": "structures/nuclear/pdb-1vym/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 6033
+    },
+    {
+      "id": "pdb-8as5",
+      "name": "Human nucleophosmin 1 pentameric core",
+      "metadata_path": "structures/nuclear/pdb-8as5/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 3673
+    },
+    {
+      "id": "pdb-1jey",
+      "name": "Human Ku70–Ku80 heterodimer bound to DNA",
+      "metadata_path": "structures/nuclear/pdb-1jey/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 9472
+    },
+    {
+      "id": "pdb-4dqy",
+      "name": "Human PARP1 activation domains bound to a DNA break",
+      "metadata_path": "structures/nuclear/pdb-4dqy/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 6407
+    },
+    {
+      "id": "pdb-9ehz",
+      "name": "Human RNA polymerase II elongation complex",
+      "metadata_path": "structures/nuclear/pdb-9ehz/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 32125
+    },
+    {
+      "id": "pdb-7evo",
+      "name": "Human 17S U2 small nuclear ribonucleoprotein",
+      "metadata_path": "structures/nuclear/pdb-7evo/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 32104
+    },
+    {
+      "id": "pdb-6icz",
+      "name": "Human post-catalytic spliceosome, P complex",
+      "metadata_path": "structures/nuclear/pdb-6icz/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 97900
+    },
+    {
+      "id": "pdb-7vbb",
+      "name": "Human RNA polymerase I elongation complex, post-translocation state",
+      "metadata_path": "structures/nuclear/pdb-7vbb/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 33151
+    },
+    {
+      "id": "pdb-7mqa",
+      "name": "Human small-subunit processome, nucleolar post-A1 state",
+      "metadata_path": "structures/nuclear/pdb-7mqa/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 242409
+    },
+    {
+      "id": "pdb-6jlb",
+      "name": "Human lamin A/C N-terminal fragment tetramer",
+      "metadata_path": "structures/nuclear/pdb-6jlb/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "experimental_coordinate_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 7161
+    },
+    {
+      "id": "pdb-7r5j",
+      "name": "Dilated human nuclear pore complex, integrative structural model",
+      "metadata_path": "structures/nuclear/pdb-7r5j/metadata.json",
+      "kind": "macromolecule",
+      "provenance_class": "integrative_experimental_and_computational_model",
+      "source_status": "pinned_source_available",
+      "atom_count_upper_bound": 4937064
+    }
+  ]
+}
