@@ -16,17 +16,17 @@ Displayed names are concise (Insulin, Ubiquitin, Lysozyme, Myoglobin (mutant), D
 
 ## Use with CellSimulator
 
-Clone this repo **inside** your `CellSimulator` folder or next to it. Run these commands from `CellSimulator-Structures`.
+This is a separate Git repository. A sibling checkout is recommended for development; a nested checkout is also supported. Run commands from this repository and supply the actual simulator target explicitly.
 
-If cloned inside `CellSimulator` (your current layout):
+For sibling checkouts:
 
 ```powershell
 python catalog.py list
 python catalog.py validate
-python catalog.py install all --target ..
+python catalog.py install all --target ..\CellSimulator
 ```
 
-If the repositories are next to one another, use `--target ..\CellSimulator` instead.
+For a nested checkout, use `--target ..`. CellSimulator's optional `CELLSIM_STRUCTURES_ROOT` setting can identify either layout without relying on the terminal's working directory.
 
 To install only insulin from the nested layout:
 
@@ -34,7 +34,7 @@ To install only insulin from the nested layout:
 python catalog.py install insulin --target ..
 ```
 
-The installer also removes obsolete animal-protein JSON only when it recognizes its own previously generated files. Re-run `install all` after updating the repository to replace older chicken and whale models. The installer downloads the original coordinate files from [RCSB PDB](https://www.rcsb.org/) on first use and caches them in the Git-ignored `cache/` folder. It converts them into **view-only** JSON files under `CellSimulator/molecules/proteins/`, which the existing CellSimulator Molecules browser can load. The Macromolecules tab is not yet connected directly to this repository.
+The installer also removes obsolete animal-protein JSON only when it recognizes its own previously generated files. Re-run `install all` after updating the repository to replace older chicken and whale models. The installer downloads the original coordinate files from [RCSB PDB](https://www.rcsb.org/) on first use and caches them in the Git-ignored `cache/` folder. It converts them into **view-only** JSON files under `CellSimulator/molecules/proteins/`, which the existing CellSimulator Molecules browser can load. CellSimulator owns the runtime catalog and resolves available structures through its shared library interface.
 
 The local files are intended for **visual inspection**, not validated molecular dynamics. No missing hydrogen atoms, force-field parameters, or solvent molecules are fabricated. Display bonds are inferred for visual purposes only. NMR structures use their first deposited model.
 
@@ -61,3 +61,11 @@ python -m unittest discover -s tests -v
 ```
 
 Source PDB files remain unmodified in the cache so each visual model can be traced back to its experimental input.
+
+## Dataset compatibility
+
+`dataset_manifest.json` identifies this catalog release, its schema, and the SHA-256 of `catalog.json`. CellSimulator records the compatible release in `data_contracts.json` and reports the configured checkout in `python main.py --diagnose`.
+
+A dataset version is a compatibility and provenance record. It does not mean its coordinates are ready for molecular dynamics. Source identity, assembly/model selection, processing and simulation preparation remain separate records. Catalog changes must update the manifest hash and dataset version together. Nuclear-library work in a draft branch is not part of this starter release.
+
+Authored explanations belong in CellSimulator-Knowledge. BioSimGlossaryAgent is retired and is not a dependency.
