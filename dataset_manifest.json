@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "dataset_id": "cellsimulator-structures",
+  "dataset_version": "2026.11.23",
+  "catalog_schema_version": 1,
+  "catalog_path": "catalog.json",
+  "catalog_sha256": "4912300078d0fd93e17ae6956fb941b788fa0dd43d95afbaf3be858601b55948",
+  "source_repository": "https://github.com/jgoers64/CellSimulator-Structures",
+  "source_catalog_commit": "7bed2329f7ca234636521895c114831652ea5a42",
+  "structure_status": "view_only",
+  "coordinate_units": "angstrom",
+  "identity_policy": "Reuse verified canonical molecular identities; source models, assemblies and placements remain distinct."
+}
